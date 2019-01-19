@@ -13,23 +13,28 @@
             //the_title( sprintf( '<h2 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h2>' );
         ?>
 
-        <div class=homepage-title-containter> 
-    <a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><img class ="q-logo" src="<?php echo get_template_directory_uri() . '/images/qod-logo.svg' ?> " alt="quotes on dev logo."/></a>
-        </div>
+     
 
 	<!-- </header> -->
 
-	<!-- <div class="entry-content"> -->
+
 <?php 
   query_posts('showposts=1&orderby=rand'); 
    the_post();
  ?> 
- <div class="quotesbyauthor"> <?php  the_excerpt(); ?> </div>
-  <div class="author_dev" > <?php the_title(); ?> </div>
+
+ <div class="quotesbyauthor"> 
+   <p>  <?php  the_excerpt(); ?> </p>
+    </div>
+
+  <div class="authorDevContainer" > 
+     <h2  class="author_dev">- <?php the_title(); ?> </h2>
+    
+</div>
     
 
    
-</div><!-- .entry-content -->
+
            
               
 <div class="button-container">

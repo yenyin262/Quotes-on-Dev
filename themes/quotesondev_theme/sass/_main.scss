@@ -1,11 +1,50 @@
+
+.max-width-container { 
+    padding: 15px;
+     height: 100vh;
+     margin-top: 50px;
+     width: 100%;
+     margin: 0 auto;
+     max-width: 1080px;
+  }
+ 
+
 body { 
     background-color: #222222;
-  color: #ffffff;
+    color: #ffffff;
     font-family: 'Exo Web';
     font-size: 16px;
+    line-height:1.5;
 }
 
-.showMeAnotherButton{
+
+.quotesDevLogo {
+ width: 80%;
+ display: block;
+}
+
+ 
+ .site-branding { 
+    margin-top: 50px;
+ }
+
+ .quotesbyauthor { 
+     font-size:20px;
+     font-family: 'Exo Web';
+     font-weight: 100;
+     
+ }
+ .author_dev { 
+    display: inline;
+    font-size: 1.25rem;
+    font-weight: 100;
+
+    
+ }
+ .authorDevContainer {
+     margin-bottom: 40px;
+ }
+ .showMeAnotherButton{
     color:#00cc00;
     border: solid 2px #00cc00;
     font-size: 16px;
@@ -14,11 +53,27 @@ body {
     background-color: #222222;
     box-shadow: none;
     text-shadow: none;
+    display: block;
+
+    a { 
+        text-decoration: none;
+        color:#00cc00;
+        
+    }
 }
 
-// .max-width-container { 
-//     max-width: 1080px;
-//     width: 100%;
-//     margin: 0 auto; 
-//     padding: 200px 200px;
-// }
+.menu-toggle { 
+    display: none;
+}
+.main-navigation ul { 
+    display: inline-flex;
+    list-style: none;
+    margin: 1rem 0 0;
+   
+}
+
+li { 
+    border-right: solid 1px white;
+    padding-left: 16px;
+        padding-right: 16px;
+}
