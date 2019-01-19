@@ -56,7 +56,15 @@ add_filter( 'stylesheet_uri', 'qod_minified_css', 10, 2 );
  * Enqueue scripts and styles.
  */
 function qod_scripts() {
+	wp_deregister_script('jquery');
+    wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js', array(), null, true);
+
+    wp_enqueue_style('quotesdev-font-awesome', 'https://use.fontawesome.com/releases/v5.6.3/css/all.css');
+
+
 	wp_enqueue_style( 'qod-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'qod-starter-main', get_template_directory_uri() . '/build/js/main.min.js', array(), '20151215', true );
 
 	wp_enqueue_script( 'qod-starter-navigation', get_template_directory_uri() . '/build/js/navigation.min.js', array(), '20151215', true );
 	wp_enqueue_script( 'qod-starter-skip-link-focus-fix', get_template_directory_uri() . '/build/js/skip-link-focus-fix.min.js', array(), '20151215', true );
@@ -82,3 +90,39 @@ require get_template_directory() . '/inc/metaboxes.php';
  * Custom WP API modifications.
  */
 require get_template_directory() . '/inc/api.php';
+
+
+
+add_filter( 'posts_orderby' , 'custom_cpt_order' );
+
+function custom_cpt_order( $orderby ) {
+	global $wpdb;
+	
+	// Check if the query is for an archive
+	if ( is_archive() && get_query_var("post_type") == "title" ) {
+		// Query was for archive, then set order
+		return "$wpdb->posts.post_title ASC";
+	}
+	
+	return $orderby;
+}
+
+
+	add_action( 'pre_get_posts', 'author_lists' );
+// Show all Projects on Projects Archive Page
+function author_lists( $query ) {
+    if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'title' ) ) {
+            $query->set( 'posts_per_page', '-1' );
+    }
+}
+
+
+
+function quote_scripts() {
+   wp_localize_script( 'qod-starter-main', 'pro_quotes', array(
+	   'rest_url' => esc_url_raw( rest_url() ),
+	   'wpapi_nonce' => wp_create_nonce( 'wp_rest' ),
+	   'post_id' => get_the_ID()
+   ) );
+ }
+ add_action( 'wp_enqueue_scripts', 'quote_scripts' );
