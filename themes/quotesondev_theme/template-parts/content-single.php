@@ -13,10 +13,20 @@
 			<?php the_post_thumbnail( 'large' ); ?>
 		<?php endif; ?>
 
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-		<?php the_content(); ?>
-	</div><!-- .entry-content -->
+
+ <div class="quotesbyauthor"> 
+   <p>  <?php  the_excerpt(); ?> </p>
+ </div>
+
+  <div class="authorDevContainer" > 
+     <h2 class="author_dev">- <?php the_title(); ?> </h2>
+</div>
+    
+	              
+<div class="button-container">
+    <button class="showMeAnotherButton" id="quote-button"><a href="<?php the_permalink() ?>">Show Me Another!</a></button>
+</div> 
 </article><!-- #post-## -->

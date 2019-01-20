@@ -623,7 +623,6 @@ object {
 /* Submit a Quote Page */
 .max-width-container {
   padding: 15px;
-  height: 100vh;
   margin-top: 50px;
   width: 100%;
   margin: 0 auto;
@@ -650,8 +649,9 @@ body {
 
 .author_dev {
   display: inline;
-  font-size: 1.25rem;
   font-weight: 100; }
+  .author_dev h2 {
+    font-size: 1.25rem; }
 
 .authorDevContainer {
   margin-bottom: 40px; }
@@ -671,6 +671,30 @@ body {
     text-decoration: none;
     color: #00cc00; }
 
+input[type=text] {
+  border: solid 2px #00cc00;
+  background-color: #222222;
+  color: #ffffff;
+  width: 57%;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+
+input[name=Quote] {
+  height: 100px;
+  width: 100%; }
+
+input[type=submit] {
+  color: #00cc00;
+  border: solid 2px #00cc00;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 37px;
+  background-color: #222222;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  display: block; }
+
 .menu-toggle {
   display: none; }
 
@@ -684,4 +708,5 @@ body {
 li {
   border-right: solid 1px white;
   padding-left: 16px;
-  padding-right: 16px; }
+  padding-right: 16px;
+  color: #00cc00; }

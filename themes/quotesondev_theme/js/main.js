@@ -10,10 +10,17 @@ $(function () {
         xhr.setRequestHeader("X-WP-Nonce", pro_quotes.wpapi_nonce);
       }
     }).done(function(data) {
-         console.log(data[0]);
-        $(".quotesbyauthor").html(data[0].content.rendered);
-      $(".author_dev").html(data[0].title.rendered);
+      console.log(data);
+      $(".quotesbyauthor").html(data[0].content.rendered);
+      $(".author_dev").html('- ' + data[0].title.rendered);
+
+      history.pushState(null, null, "/Project_5/" + data[0].slug);
     });
     });
+
+
+  
+  
+
 
 });

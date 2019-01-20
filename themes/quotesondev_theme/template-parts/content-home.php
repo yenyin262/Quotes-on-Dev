@@ -20,15 +20,15 @@
 
 <?php 
   query_posts('showposts=1&orderby=rand'); 
-   the_post();
- ?> 
+  the_post();
+?> 
 
  <div class="quotesbyauthor"> 
    <p>  <?php  the_excerpt(); ?> </p>
     </div>
 
   <div class="authorDevContainer" > 
-     <h2  class="author_dev">- <?php the_title(); ?> </h2>
+     <h2 class="author_dev">- <?php the_title(); ?> </h2>
     
 </div>
     
