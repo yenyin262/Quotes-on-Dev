@@ -1,120 +1,305 @@
-
-.max-width-container { 
-    padding: 15px;
-     margin-top: 50px;
-     width: 100%;
-     margin: 0 auto;
-     max-width: 1080px;
-  }
- 
-
-body { 
-    background-color: #222222;
-    color: #ffffff;
-    font-family: 'Exo Web';
-    font-size: 16px;
-    line-height:1.5;
+.max-width-container {
+  padding: 15px;
+  margin-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
 }
 
+body {
+  background-color: #222222;
+  color: #ffffff;
+  font-family: "Exo Web";
+  font-size: 16px;
+  line-height: 1.5;
+}
 
 .quotesDevLogo {
- width: 80%;
- display: block;
+  width: 80%;
+  display: block;
 }
 
- 
- .site-branding { 
-    margin-top: 50px;
- }
-
- .quotesbyauthor { 
-     font-size:20px;
-     font-family: 'Exo Web';
-     font-weight: 100;
-     
- }
- .author_dev { 
-    display: inline;
-    
-    font-weight: 100;
-    h2 {
-        font-size: 1.25rem;
-        // &::before {
-        //     content: '-';
-        // }
-    }
-
-    
- }
- .authorDevContainer {
-     margin-bottom: 40px;
- }
- 
-
- .showMeAnotherButton{
-    color:#00cc00;
-    border: solid 2px #00cc00;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 12px 37px;
-    background-color: #222222;
-    box-shadow: none;
-    text-shadow: none;
-    display: block;
-
-    a { 
-        text-decoration: none;
-        color:#00cc00;
-        
-    }
+.site-branding {
+  margin-top: 50px;
 }
 
-
-
-input[type=text]{
-    border: solid 2px #00cc00;
-    background-color: #222222;
-    color: #ffffff;
-    width: 57%;
-    margin-top:20px;
-    margin-bottom: 20px;
-   
-}
-
-input[name=Quote]{
-    height: 100px; 
-    width: 100%;
-}
-
-
-input[type=submit]{
-    color:#00cc00;
-    border: solid 2px #00cc00;
-    font-size: 16px;
-    font-weight: 700;
-    padding: 12px 37px;
-    background-color: #222222;
-    box-shadow: none;
-    text-shadow: none;
-    display: block;
+.quotesbyauthor {
+  font-size: 20px;
+  font-family: "Exo Web";
+  font-weight: 100;
+  margin-top: 3rem;
 
 }
-
-
-.menu-toggle { 
-    display: none;
+.author_dev {
+  display: inline;
+  font-size: 20px;
+  font-weight: 100;
+  h2 {
+    font-size: 1.25rem;
+    // &::before {
+    //     content: '-';
+    // }
+  }
 }
-.main-navigation ul { 
-    display: inline-flex;
+.authorDevContainer {
+  margin-bottom: 40px;
+}
+
+.showMeAnotherButton {
+  color: #00cc00;
+  border: solid 2px #00cc00;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 37px;
+  background-color: #222222;
+  box-shadow: none;
+  text-shadow: none;
+  display: block;
+
+  a {
+    text-decoration: none;
+    color: #00cc00;
+    font-weight: 400;
+  }
+}
+
+.about-title,
+.archive-title
+ {
+  font-weight: 400;
+  margin-top: 3rem;
+}
+
+.about-content {
+  font-weight: 100;
+  height: 70vh;
+  a {
+    text-decoration: none;
+  }
+}
+
+.author-content ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.author-content li {
+  margin-bottom: 0.5rem;
+  margin-right: 9px;
+  border-right: none;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 100;
+
+  a {
+    text-decoration: none;
+  }
+}
+.author-content h2,
+.category-content h2,
+.tags-content h2, 
+
+{ 
+font-weight: 400;
+margin-top: 3rem;
+
+}
+.category-content ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .category-content li {
+    margin-bottom: 0.5rem;
+    margin-right: 9px;
+    border-right: none;
     list-style: none;
-    margin: 1rem 0 0;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 100;
   
-   
+    a {
+      text-decoration: none;
+    }
+  }
+  
+  .tags-content ul {
+    margin-left: 0;
+    padding-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .tags-content li {
+    margin-bottom: 0.5rem;
+    margin-right: 6px;
+    border-right: none;
+    list-style: none;
+    padding-left: 0;
+    padding-right: 0;
+    font-weight: 100;
+  
+    a {
+      text-decoration: none;
+    }
+  }
+
+
+
+input[type="text"] {
+  border: solid 2px #00cc00;
+  background-color: #222222;
+  color: #ffffff;
+  width: 57%;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
-li { 
-    border-right: solid 1px white;
-    padding-left: 16px;
-        padding-right: 16px;
-        color: #00cc00;
+input[name="Quote"] {
+  height: 100px;
+  width: 100%;
+}
+
+.submit-title {
+  font-weight: 400;
+  margin-top: 40px;
+}
+
+input[type="submit"] {
+  color: #00cc00;
+  border: solid 2px #00cc00;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 37px;
+  background-color: #222222;
+  box-shadow: none;
+  text-shadow: none;
+  display: block;
+}
+
+.menu-toggle {
+  display: none;
+}
+.main-navigation ul {
+  display: inline-flex;
+  list-style: none;
+
+  font-weight: 100;
+
+  li {
+    border-right: 1px solid #fff;
+    padding-right: 16px;
+    padding-left: 10px;
+  }
+    li:first-child {
+      padding-left: 0;
+    }
+      li:last-child {
+        border-right: none;
+      }
+    }
+  
+
+
+a {
+  color: #00cc00;
+}
+a:visited {
+  color: #00cc00;
+}
+
+.loginMessage {
+  font-weight: 100;
+}
+
+.loginLink {
+  text-decoration: none;
+  color: #00cc00;
+}
+
+.submitPage {
+  height: 160vh;
+
+}
+.redAcademyWebsite {
+  font-weight: 100;
+  margin: 73px 0 49px;
+
+
+  a {
+    color: #00cc00;
+    text-decoration: none;
+  }
+}
+
+// archives
+
+.archiveAuthor { 
+  padding-bottom: 50px;
+  border-bottom: 1px dashed #ffffff;
+  margin-bottom: 40px;
+}
+
+.archive-content { 
+  font-size: 20px;
+  font-family: "Exo Web";
+  font-weight: 100;
+}
+
+.page-header { 
+
+  border-bottom: 1px dashed #ffffff;
+}
+
+.page-numbers { 
+  padding: 5px;
+    text-decoration: none;
+    font-weight: 100;
+}
+
+.error-title { 
+  font-weight: 400;
+  font-size: 32px;
+}
+
+.error-content {
+  font-weight: 100;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+
+.searchIcon { 
+  color: #00cc00;
+  text-shadow: none;
+}
+
+input[type="search"] {
+  background-color: #222222;
+  border: 2px solid #00cc00;
+  width: 60%;
+&:hover { 
+  color: white;
+  border:2px solid #ffffff;
+
+}
+
+}
+
+.search-submit { 
+  background-color: #222222;
+    box-shadow: none;
+    border: none;
+}
+
+.fa-search { 
+  font-size: 15px;
+  position: relative;
+  right: 11px;
+  top: 5px;
 }

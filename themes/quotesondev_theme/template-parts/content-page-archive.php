@@ -9,57 +9,52 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="entry-header">
-		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+		<?php the_title( '<h1 class="archive-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
 
-	<div class="entry-content">
-
-	<h2>Quotes Authors</h2>
-
+	<div class="author-content">
+    <h2>Quotes Authors</h2>
+    <ul>
 	<?php 
                     $args = array( 'post_type' => 'post', 'order' => 'ASC', 'numberposts' => '-1' );
                     $author_posts = get_posts( $args ); // returns an array of posts
                 ?>
                     <?php foreach ( $author_posts as $post ) : setup_postdata( $post ); ?>
-	
-                   
-    <a href="<?php echo get_post_permalink($post)?>" class="author-name"><?php echo the_title(); ?></a>
 
-
-	<?php endforeach; wp_reset_postdata(); ?>
-
-	
-
+                <li> <a href="<?php echo get_post_permalink($post)?>" class="author-name"><?php echo the_title(); ?></a> <li>
+    <?php endforeach; wp_reset_postdata(); ?>
+  
+    </ul>
 	</div>
 
-	<div class="entry-content">
-
+	<div class="category-content">
 	<h2>Categories</h2>
-
+<ul>
   <?php  $categories = get_categories( 'category' ); // returns an array of category
     ?>
     <?php foreach ( $categories as $category ) { ?>
                    
-    <a href="<?php echo get_category_link($category)?>" class="category-title"><?php echo $category ->name; ?></a>
+   <li> <a href="<?php echo get_category_link($category)?>" class="category-title"><?php echo $category ->name; ?></a><li>
                 
     <?php }?>
-                    
+       <ul>             
     </div>
 
 
-<div class="entry-content">
+<div class="tags-content">
 <h2>Tags</h2>
+<ul>
 <?php  $tags= get_tags( 'tags' ); // returns an array of category
                     ?>
  <?php foreach ( $tags as $tag) { ?>
                    
-<a href="<?php echo get_category_link($tag)?>" class="tag-title"><?php echo $tag ->name; ?></a>
+<li><a href="<?php echo get_category_link($tag)?>" class="tag-title"><?php echo $tag ->name; ?></a><li> 
                 
 <?php }?>
-
+ </ul>
 </div>
 
-<div class="entry-content">
+<!-- <div class="entry-content"> -->
 
-	</div><!-- .entry-content -->
+	<!-- </div>.entry-content -->
 </article><!-- #post-## -->

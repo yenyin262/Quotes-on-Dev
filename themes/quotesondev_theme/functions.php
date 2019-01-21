@@ -93,28 +93,28 @@ require get_template_directory() . '/inc/api.php';
 
 
 
-add_filter( 'posts_orderby' , 'custom_cpt_order' );
+// add_filter( 'posts_orderby' , 'custom_cpt_order' );
 
-function custom_cpt_order( $orderby ) {
-	global $wpdb;
+// function custom_cpt_order( $orderby ) {
+// 	global $wpdb;
 	
-	// Check if the query is for an archive
-	if ( is_archive() && get_query_var("post_type") == "title" ) {
-		// Query was for archive, then set order
-		return "$wpdb->posts.post_title ASC";
-	}
+// 	// Check if the query is for an archive
+// 	if ( is_archive() && get_query_var("post_type") == "title" ) {
+// 		// Query was for archive, then set order
+// 		return "$wpdb->posts.post_title ASC";
+// 	}
 	
-	return $orderby;
-}
+// 	return $orderby;
+// }
 
 
-	add_action( 'pre_get_posts', 'author_lists' );
-// Show all Projects on Projects Archive Page
-function author_lists( $query ) {
-    if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'title' ) ) {
-            $query->set( 'posts_per_page', '-1' );
-    }
-}
+// 	add_action( 'pre_get_posts', 'author_lists' );
+// // Show all Projects on Projects Archive Page
+// function author_lists( $query ) {
+//     if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'title' ) ) {
+//             $query->set( 'posts_per_page', '-1' );
+//     }
+// }
 
 
 

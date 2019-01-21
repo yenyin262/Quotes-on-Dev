@@ -18,7 +18,7 @@
 				</nav><!-- #site-navigation -->
 				</div>
 
-				<p> Brought to you  by <a href="https://redacademy.com">Red Academy</a></p>
+				<p class ="redAcademyWebsite"> Brought to you  by <a href="https://redacademy.com">Red Academy</a></p>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 
