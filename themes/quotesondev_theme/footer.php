@@ -7,8 +7,8 @@
 
 ?>
 
-			</div><!-- #content -->
-
+			</div><!-- #content --><i class="fas fa-quote-right fa-7x  quoteRight"></i>
+</div> 
 			<footer id="colophon" class="site-footer" role="contentinfo">
 		
 				 <div class="site-info">
@@ -18,7 +18,7 @@
 				</nav><!-- #site-navigation -->
 				</div>
 
-				<p class ="redAcademyWebsite"> Brought to you  by <a href="https://redacademy.com">Red Academy</a></p>
+				<p class ="redAcademyWebsite"> Brought to you by<a href="https://redacademy.com">  RED Academy</a></p>
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
 

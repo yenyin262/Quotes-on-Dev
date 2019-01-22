@@ -127,4 +127,26 @@ function quote_scripts() {
  }
  add_action( 'wp_enqueue_scripts', 'quote_scripts' );
 
+
  
+
+
+
+
+add_action( 'pre_get_posts',  'items_per_page'  );
+
+function items_per_page( $query ) {
+
+  global $wp_the_query;
+
+  if ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_search() ) ) {
+    $query->set( 'posts_per_page', 10 );
+  }
+  elseif ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_archive() ) ) {
+    $query->set( 'posts_per_page', 5 );
+  }
+  
+
+  return $query;
+
+}

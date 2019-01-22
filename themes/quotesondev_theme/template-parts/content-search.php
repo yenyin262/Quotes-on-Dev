@@ -13,8 +13,8 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php qod_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php qod_posted_by(); ?>
-		</div><!-- .entry-meta -->
+			<!-- <?php// qod_posted_on(); ?> / <?php //comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / <?php //qod_posted_by(); ?> -->
+	 </div> 
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
@@ -22,3 +22,4 @@
 		<?php the_excerpt(); ?>
 	</div><!-- .entry-summary -->
 </article><!-- #post-## -->
+

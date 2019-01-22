@@ -73,6 +73,10 @@ body {
 .about-content {
   font-weight: 100;
   height: 70vh;
+
+@include tablet { 
+  height: 40vh;
+}
   a {
     text-decoration: none;
   }
@@ -182,11 +186,30 @@ input[type="submit"] {
 .menu-toggle {
   display: none;
 }
-.main-navigation ul {
-  display: inline-flex;
-  list-style: none;
 
+.main-navigation {
+  // clear: both;
+  // display: block;
+  // float: left;
+  // width: 100%;
+  display: flex;
+
+@include desktop {
+    display: flex;
+    width: 76%;
+    justify-content: flex-end;
+  
+}
+}
+
+.main-navigation ul {
+ display: block;
+  list-style: none;
   font-weight: 100;
+
+  @include tablet { 
+    margin-right: 16px;
+  }
 
   li {
     border-right: 1px solid #fff;
@@ -198,6 +221,12 @@ input[type="submit"] {
     }
       li:last-child {
         border-right: none;
+      }
+      @include tablet {
+        li:last-child{ 
+          border-right: 1px solid #fff;
+         
+        }
       }
     }
   
@@ -225,7 +254,11 @@ a:visited {
 }
 .redAcademyWebsite {
   font-weight: 100;
-  margin: 73px 0 49px;
+
+  @include desktop { 
+    // display: flex;
+    // justify-content: flex-end;
+  }
 
 
   a {
@@ -303,3 +336,49 @@ input[type="search"] {
   right: 11px;
   top: 5px;
 }
+
+.quoteSection {
+  display:flex;
+  } 
+
+  .fas { 
+    display: none;
+  }
+.fa-quote-left { 
+  display: hide;
+  @include tablet {
+display: hide;
+  }
+  @include desktop {
+    display: inline;
+    color: #0c0;
+    position: relative;
+    right: 1%;
+    font-size: 125px;   
+    padding-right: 40px;   
+}
+}
+
+.source  
+  a:visited {  
+  text-decoration:none;
+  color: #0c0;
+  font-size: 20px;
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+.quoteRight { 
+  display: hide;
+  @include tablet {
+display: hide;
+  }
+  @include desktop {
+    display: inline;
+    color: #00cc00;
+    font-size:125px;
+    right: 1%;
+    position: relative;
+      }
+}
+
