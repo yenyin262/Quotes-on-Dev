@@ -1,60 +1,58 @@
-.max-width-container {
-  padding: 15px;
-  margin-top: 50px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1080px;
-}
-
 body {
   background-color: #222222;
   color: #ffffff;
   font-family: "Exo Web";
   font-size: 16px;
   line-height: 1.5;
-}
+//}
 
-.quotesDevLogo {
-  width: 80%;
-  display: block;
-  @include tablet {
-    width: 500px;
-  }
-
-  @include desktop { 
-    margin: 0 auto;
-    width: 700px;
-  }
-}
+.max-width-container {
+  padding: 15px;
+  margin-top: 50px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1080px;
+//}
 
 .site-branding {
   margin-top: 50px;
+  .quotesDevLogo {
+    width: 80%;
+    display: block;
+    @include tablet {
+      width: 500px;
+    }
+  
+    @include desktop {
+      margin: 0 auto;
+      width: 700px;
+    }
+  }
+  
 }
+
+
+
 
 .quotesbyauthor {
   font-size: 20px;
   font-family: "Exo Web";
   font-weight: 100;
-  // margin-top: 3rem;
-@include tablet { 
-  font-size: 1.75rem;
-} 
-@include desktop {
-  font-size: 2.5rem;
-  // margin-right: 17px;
-  margin-right: 157px;
 
+  @include tablet {
+    font-size: 1.75rem;
+  }
+  @include desktop {
+    font-size: 2.5rem;
+  }
 }
-}
+
 .author_dev {
   display: inline;
   font-size: 20px;
   font-weight: 100;
   h2 {
     font-size: 1.25rem;
-    // &::before {
-    //     content: '-';
-    // }
   }
 }
 .authorDevContainer {
@@ -73,26 +71,23 @@ body {
   display: block;
   background: none;
 
-  @include desktop { 
+  @include desktop {
     margin: 0 auto;
   }
 
   a {
     text-decoration: none;
     color: #00cc00;
-    // font-weight: 400;
     font-family: "Exo Web";
 
-    @include tablet { 
-      // font-weight: 700;
-    font-size: 20px;
+    @include tablet {
+      font-size: 20px;
     }
   }
 }
 
 .about-title,
-.archive-title
- {
+.archive-title {
   font-weight: 400;
   margin-top: 3rem;
 }
@@ -101,9 +96,9 @@ body {
   font-weight: 100;
   height: 40vh;
 
-@include tablet { 
-  height: 40vh;
-}
+  @include tablet {
+    height: 40vh;
+  }
   a {
     text-decoration: none;
   }
@@ -126,75 +121,69 @@ body {
   font-weight: 100;
   font-size: 1rem;
 
-  @include tablet { 
+  @include tablet {
     font-size: 1.25rem;
-    
-}
-  
+  }
+
   a {
     text-decoration: none;
   }
 }
 .author-content h2,
 .category-content h2,
-.tags-content h2, 
-
-{ 
-font-weight: 400;
-margin-top: 3rem;
-
+.tags-content h2 {
+  font-weight: 400;
+  margin-top: 3rem;
 }
 .category-content ul {
-    margin-left: 0;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .category-content li {
-    margin-bottom: 0.5rem;
-    margin-right: 9px;
-    border-right: none;
-    list-style: none;
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 100;
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.category-content li {
+  margin-bottom: 0.5rem;
+  margin-right: 9px;
+  border-right: none;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 100;
 
-    @include tablet { 
-      font-size: 1.25rem;
-    }
-  
-    a {
-      text-decoration: none;
-    }
-  }
-  
-  .tags-content ul {
-    margin-left: 0;
-    padding-left: 0;
-    display: flex;
-    flex-wrap: wrap;
-  }
-  .tags-content li {
-    margin-bottom: 0.5rem;
-    margin-right: 6px;
-    border-right: none;
-    list-style: none;
-    padding-left: 0;
-    padding-right: 0;
-    font-weight: 100;
-    @include tablet { 
-      font-size: 1.25rem;
-    }
-    @include desktop { 
-      margin-right: 15px;
-    }
-  
-    a {
-      text-decoration: none;
-    }
+  @include tablet {
+    font-size: 1.25rem;
   }
 
+  a {
+    text-decoration: none;
+  }
+}
 
+.tags-content ul {
+  margin-left: 0;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+.tags-content li {
+  margin-bottom: 0.5rem;
+  margin-right: 6px;
+  border-right: none;
+  list-style: none;
+  padding-left: 0;
+  padding-right: 0;
+  font-weight: 100;
+  @include tablet {
+    font-size: 1.25rem;
+  }
+  @include desktop {
+    margin-right: 15px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
 
 input[type="text"] {
   border: solid 2px #00cc00;
@@ -204,23 +193,22 @@ input[type="text"] {
   margin-top: 20px;
   margin-bottom: 20px;
 
-  @include tablet { 
+  @include tablet {
     width: 110%;
   }
 
-  @include desktop { 
-        width: 135%; 
-}
-  
+  @include desktop {
+    width: 135%;
+  }
 }
 
 input[name="Quote"] {
   height: 100px;
   width: 100%;
-  @include tablet { 
-width: 160%;
+  @include tablet {
+    width: 160%;
   }
-  @include desktop { 
+  @include desktop {
     width: 195%;
   }
 }
@@ -240,43 +228,36 @@ input[type="submit"] {
   box-shadow: none;
   text-shadow: none;
   display: block;
-
 }
 
 .menu-toggle {
   display: none;
 }
-
-.main-navigation {
-  // clear: both;
-  // display: block;
-  // float: left;
-  // width: 100%;
+.site-info {
   display: flex;
-  margin-top: 3rem;
-  margin-bottom: 14px;
+  flex-wrap: wrap;
+  margin: 4.5rem 0 3rem;
 
+  @include desktop {
+    justify-content: flex-end;
+  }
+}
+.main-navigation {
   @include tablet {
     width: 54%;
-    margin-bottom: 4rem;
-   
-  
-}
+  }
 
-@include desktop {
-    display: flex;
-    width: 76%;
-    justify-content: flex-end;
-  
-}
+  @include desktop {
+    width: 29%;
+  }
 }
 
 .main-navigation ul {
- display: block;
+  display: block;
   list-style: none;
   font-weight: 100;
 
-  @include tablet { 
+  @include tablet {
     margin-right: 16px;
   }
 
@@ -285,21 +266,18 @@ input[type="submit"] {
     padding-right: 16px;
     padding-left: 10px;
   }
-    li:first-child {
-      padding-left: 0;
+  li:first-child {
+    padding-left: 0;
+  }
+  li:last-child {
+    border-right: none;
+  }
+  @include tablet {
+    li:last-child {
+      border-right: 1px solid #fff;
     }
-      li:last-child {
-        border-right: none;
-      }
-      @include tablet {
-        li:last-child{ 
-          border-right: 1px solid #fff;
-         
-        }
-      }
-    }
-  
-
+  }
+}
 
 a {
   color: #00cc00;
@@ -319,36 +297,29 @@ a:visited {
 
 .submitPage {
   height: 110vh;
-@include tablet { 
-  height: 108vh;
-}    
-@include desktop {
-  margin-right: 400px;
+  @include tablet {
+    height: 108vh;
+  }
+  @include desktop {
+    margin-right: 400px;
+    height: 180vh;
+  }
 }
-}
-.loginPage { 
+.loginPage {
   height: 13vh;
 
-  @include desktop { 
+  @include desktop {
     margin-right: 681px;
     width: 100%;
   }
 }
 .redAcademyWebsite {
   font-weight: 100;
-  margin-bottom: 3rem;
+  line-height: 1;
 
-
-  @include tablet { 
-    margin-bottom: 0rem;
-    padding-top: 48px;
-    }
-  
-  @include desktop { 
-    // display: flex;
-    // justify-content: flex-end;
+  @include tablet {
+    margin-top: 2px;
   }
-
 
   a {
     color: #00cc00;
@@ -358,47 +329,46 @@ a:visited {
 
 // archives
 
-.archiveAuthor { 
+.archiveAuthor {
   padding-bottom: 50px;
   border-bottom: 1px dashed #ffffff;
   margin-bottom: 40px;
 }
 
-.archive-content { 
+.archive-content {
   font-size: 20px;
   font-family: "Exo Web";
   font-weight: 100;
 
-  @include tablet { 
+  @include tablet {
     font-size: 1.75rem;
   }
 
-  @include desktop { 
+  @include desktop {
     font-size: 2.5rem;
   }
 }
 
-.page-header { 
-
+.page-header {
   border-bottom: 1px dashed #ffffff;
 
-  @include desktop { 
+  @include desktop {
     margin-right: 40px;
     margin-top: 3rem;
   }
 }
 
-.page-numbers { 
+.page-numbers {
   padding: 5px;
-    text-decoration: none;
-    font-weight: 100;
+  text-decoration: none;
+  font-weight: 100;
 }
 
-.error-title { 
+.error-title {
   font-weight: 400;
   font-size: 32px;
 
-  @include desktop { 
+  @include desktop {
     margin-top: 3rem;
   }
 }
@@ -407,7 +377,7 @@ a:visited {
   font-weight: 100;
   height: 30vh;
 
-  @include desktop { 
+  @include desktop {
     margin-right: 260px;
   }
 }
@@ -417,14 +387,14 @@ fieldset {
   padding: 0;
 }
 
-.searchLink { 
+.searchLink {
   text-decoration: none;
 }
 
-.search-summary { 
+.search-summary {
   font-weight: 100;
 }
-.searchIcon { 
+.searchIcon {
   color: #00cc00;
   text-shadow: none;
 }
@@ -433,94 +403,90 @@ input[type="search"] {
   background-color: #222222;
   border: 2px solid #00cc00;
   width: 60%;
- font-family: 'Exo Web' ,'sans-serif';
- font-size: 1rem;
- @include tablet { 
-  font-size: 1.25rem;
- } 
-&:hover { 
-  color: white;
-  border:2px solid #ffffff;
-
+  font-family: "Exo Web", "sans-serif";
+  font-size: 1rem;
+  @include tablet {
+    font-size: 1.25rem;
+  }
+  &:hover {
+    color: white;
+    border: 2px solid #ffffff;
+  }
 }
 
-}
-
-.search-submit { 
+.search-submit {
   background-color: #222222;
-    box-shadow: none;
-    border: none;
+  box-shadow: none;
+  border: none;
 }
 
-.fa-search { 
+.fa-search {
   font-size: 15px;
   position: relative;
   right: 11px;
   top: 5px;
-  font-size: 1.20rem;
+  font-size: 1.2rem;
 }
 
 .quoteSection {
-  display:flex;
-  
-  } 
+  display: flex;
+}
 
-  // .fas { 
-  //   display: none;
-  // }
-.fa-quote-left { 
+.fa-quote-left {
   display: hide;
   @include tablet {
-display: hide;
+    display: hide;
   }
   @include desktop {
     display: inline;
-    color: #0c0;
+    color: #00cc00;
     position: relative;
     right: 1%;
-    font-size: 125px;   
+    font-size: 125px;
     margin-left: 20px;
-    margin-right: 20px; 
+    margin-right: 20px;
+  }
 }
-}
-.source { 
+.source {
   font-size: 1.25rem;
   font-style: italic;
   font-weight: 100;
 }
 
-.sourceLink  {
-  text-decoration:none;
-  color: #0c0;
+.sourceLink {
+  text-decoration: none;
+  color: #00cc00;
   font-size: 20px;
   font-style: italic;
   font-weight: 100;
-  font-family: 'Exo Web' ,'sans-serif';
+  font-family: "Exo Web", "sans-serif";
 }
 
-.fa-7x { 
+.fa-7x {
   display: none;
-  @include desktop { 
-    display:inline;
+  @include desktop {
+    display: inline;
     margin-top: 50px;
     font-size: 125px;
   }
 }
-.quoteRight { 
+.quoteRight {
   display: hide;
   @include tablet {
-display: hide;
+    display: hide;
   }
   @include desktop {
     display: inline;
     color: #00cc00;
-    font-size:125px;
+    font-size: 125px;
     right: 1%;
     position: relative;
     margin-left: 20px;
-      }
+  }
 }
 
-button:hover { 
+button:hover {
   box-shadow: none;
 }
+ } // div page max-width closing brace
+} //body closing brace

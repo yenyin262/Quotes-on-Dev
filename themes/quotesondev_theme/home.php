@@ -22,7 +22,7 @@ get_header(); ?>
 			<?php /* Start the Loop */ ?>
 				<?php get_template_part( 'template-parts/content-home' ); ?>
 
-			<?php //the_posts_navigation(); ?>
+			
 
 		<?php else : ?>
 
