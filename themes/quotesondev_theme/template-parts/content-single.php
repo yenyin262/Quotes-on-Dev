@@ -26,15 +26,13 @@
 
 		<?php
         $source = get_post_meta( get_the_ID(), '_qod_quote_source', true );
-       //echo $source;
         $url   = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
-     //   echo $url;
         ?>
           
 
    <?php if ($url) :  ?>
       <span class="source">, <a class="sourceLink" href="<?php echo $url ?>"><?php echo $source ?></a></span>
-    <?php else :  ?>
+    <?php else : ?>
         <span class="source"><?php echo $source ?></span>
     <?php endif; ?>
 </div>

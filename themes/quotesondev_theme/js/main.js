@@ -1,91 +1,92 @@
 $(function () {
- $("#quote-button").on("click", function(event) {
+  $("#quote-button").on("click", function (event) {
     event.preventDefault();
-    
+
     $.ajax({
       method: "GET",
-      url: pro_quotes.rest_url + "wp/v2/posts?filter[orderby]=rand&[posts_per_page]=1", 
-    
-      beforeSend: function(xhr) {
+      url: pro_quotes.rest_url + "wp/v2/posts?filter[orderby]=rand&[posts_per_page]=1",
+
+      beforeSend: function (xhr) {
         xhr.setRequestHeader("X-WP-Nonce", pro_quotes.wpapi_nonce);
       }
-    }).done(function(data) {
+    }).done(function (data) {
       console.log(data);
       $(".quotesbyauthor").html(data[0].content.rendered);
       $(".author_dev").html('- ' + data[0].title.rendered);
-  
+
+    // }).done(function (data) {
+      const url = data[0]._qod_quote_source_url;
+      const source =   data[0]._qod_quote_source;
+
+      if (url) {
+        console.log('in url');
+        $(".source").html (`, <a class="sourceLink" href=${url}>${source}</a></span >`); 
+      }else if (source) {
+        console.log('in source');
+        $(".source").html(`, <span class="source">${source}</span>`);
+      } else {
+        console.log('in else');
+        $(".source").html('');
+        // $(".author_dev").html('- ' + data[0].title.rendered);
+      }
+
       history.pushState(null, null, "/Project_5/" + data[0].slug);
+
+    }).fail(function (err) {
+      alert("Unable to collect data");
     });
   });
 
-// // If the Source is available, use it. Otherwise hide it.
 
-// }).fail(function (err) {
-//   throw err;
-// });
-// });
-// });
+ 
 
-// 1. declare variable first
-//2. call ajax
-//3. decide data to get to post
-//4. check old post in dashboaerd
   
-  //   $("#submitButton").on("click", function(event) {
-  //     event.preventDefault();
-      
-  //     $.ajax({
-  //       method: "POST",
-  //       url: pro_quotes.rest_url + "wp/v2/posts", 
-  //       // data: { 
+  
+    $("#submitButton").on("click", function(event) {
+      event.preventDefault();
 
-          
-  //       // }
-  //       beforeSend: function(xhr) {
-  //         xhr.setRequestHeader("X-WP-Nonce", pro_quotes.wpapi_nonce);
-  //       }
-  //     }).done(function(data) {
+       $.ajax({
+         method: "POST",
+         url: pro_quotes.rest_url + "wp/v2/posts", 
 
-       
+        beforeSend: function(xhr) {
+           xhr.setRequestHeader("X-WP-Nonce", pro_quotes.wpapi_nonce);
+     }, 
+  data: {
+  title: $('#author-name').val(),
+  content:$('#newQuote').val(),
+  _qod_quote_source:$('#findQuote').val(),
+  _qod_quote_source_url: $('#quoteSource').val(),
+  post_status: "draft"}
+  }).done(function (data) {
+    alert("Quote sucessfully submitted to database");
+    console.log('done!')
+  });
+
+
+
+
+  });
+});
+
   //      // success: function ( data ) 
-  //      // {
-  //         var post = data.shift(); // The data is an array of posts. Grab the first one.
-  //         $( '#author-name' ).val();
-  //         $( '#newQuote' ).val();
-  //      // console.log(data);
+ 
   //      // $(".quotesbyauthor").html(data[0].content.rendered);
   //      // $(".author_dev").html('- ' + data[0].title.rendered);
-  
+
   //    //   history.pushState(null, null, "/Project_5/" + data[0].slug);
   //   //  });
   //    // });
   //   }).fail(function (err) {
   //     throw err;
   // });
-  
-    
-
-    // $('.#quote-button').on("change",  (event)  => {
-    //   $('#quote-button').css({
-        
-    //       'color': '#00cc00',
-    //       'border': 'solid 2px #00cc00',
-    //       'font-size': '16px',
-    //       'font-weight': '700',
-    //       'padding': '12px 37px',
-    //       'background-color': '#222222',
-    //       'box-shadow': 'none',
-    //       'text-shadow': 'none',
-    //       'display': 'block',
-        
-    //   });
-        
-    //   });
-
-  
-
-   
 
 
 
-    });
+
+
+
+
+
+
+
