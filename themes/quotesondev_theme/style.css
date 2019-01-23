@@ -638,6 +638,13 @@ body {
 .quotesDevLogo {
   width: 80%;
   display: block; }
+  @media (min-width: 600px) {
+    .quotesDevLogo {
+      width: 500px; } }
+  @media (min-width: 1080px) {
+    .quotesDevLogo {
+      margin: 0 auto;
+      width: 700px; } }
 
 .site-branding {
   margin-top: 50px; }
@@ -645,8 +652,14 @@ body {
 .quotesbyauthor {
   font-size: 20px;
   font-family: "Exo Web";
-  font-weight: 100;
-  margin-top: 3rem; }
+  font-weight: 100; }
+  @media (min-width: 600px) {
+    .quotesbyauthor {
+      font-size: 1.75rem; } }
+  @media (min-width: 1080px) {
+    .quotesbyauthor {
+      font-size: 2.5rem;
+      margin-right: 157px; } }
 
 .author_dev {
   display: inline;
@@ -668,11 +681,18 @@ body {
   -webkit-box-shadow: none;
           box-shadow: none;
   text-shadow: none;
-  display: block; }
+  display: block;
+  background: none; }
+  @media (min-width: 1080px) {
+    .showMeAnotherButton {
+      margin: 0 auto; } }
   .showMeAnotherButton a {
     text-decoration: none;
     color: #00cc00;
-    font-weight: 400; }
+    font-family: "Exo Web"; }
+    @media (min-width: 600px) {
+      .showMeAnotherButton a {
+        font-size: 20px; } }
 
 .about-title,
 .archive-title {
@@ -681,7 +701,7 @@ body {
 
 .about-content {
   font-weight: 100;
-  height: 70vh; }
+  height: 40vh; }
   @media (min-width: 600px) {
     .about-content {
       height: 40vh; } }
@@ -704,7 +724,11 @@ body {
   list-style: none;
   padding-left: 0;
   padding-right: 0;
-  font-weight: 100; }
+  font-weight: 100;
+  font-size: 1rem; }
+  @media (min-width: 600px) {
+    .author-content li {
+      font-size: 1.25rem; } }
   .author-content li a {
     text-decoration: none; }
 
@@ -731,6 +755,9 @@ body {
   padding-left: 0;
   padding-right: 0;
   font-weight: 100; }
+  @media (min-width: 600px) {
+    .category-content li {
+      font-size: 1.25rem; } }
   .category-content li a {
     text-decoration: none; }
 
@@ -751,6 +778,12 @@ body {
   padding-left: 0;
   padding-right: 0;
   font-weight: 100; }
+  @media (min-width: 600px) {
+    .tags-content li {
+      font-size: 1.25rem; } }
+  @media (min-width: 1080px) {
+    .tags-content li {
+      margin-right: 15px; } }
   .tags-content li a {
     text-decoration: none; }
 
@@ -761,10 +794,22 @@ input[type="text"] {
   width: 57%;
   margin-top: 20px;
   margin-bottom: 20px; }
+  @media (min-width: 600px) {
+    input[type="text"] {
+      width: 110%; } }
+  @media (min-width: 1080px) {
+    input[type="text"] {
+      width: 135%; } }
 
 input[name="Quote"] {
   height: 100px;
   width: 100%; }
+  @media (min-width: 600px) {
+    input[name="Quote"] {
+      width: 160%; } }
+  @media (min-width: 1080px) {
+    input[name="Quote"] {
+      width: 195%; } }
 
 .submit-title {
   font-weight: 400;
@@ -774,7 +819,7 @@ input[type="submit"] {
   color: #00cc00;
   border: solid 2px #00cc00;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 12px 37px;
   background-color: #222222;
   -webkit-box-shadow: none;
@@ -788,7 +833,13 @@ input[type="submit"] {
 .main-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-top: 3rem;
+  margin-bottom: 14px; }
+  @media (min-width: 600px) {
+    .main-navigation {
+      width: 54%;
+      margin-bottom: 4rem; } }
   @media (min-width: 1080px) {
     .main-navigation {
       display: -webkit-box;
@@ -832,10 +883,28 @@ a:visited {
   color: #00cc00; }
 
 .submitPage {
-  height: 160vh; }
+  height: 110vh; }
+  @media (min-width: 600px) {
+    .submitPage {
+      height: 108vh; } }
+  @media (min-width: 1080px) {
+    .submitPage {
+      margin-right: 400px; } }
+
+.loginPage {
+  height: 13vh; }
+  @media (min-width: 1080px) {
+    .loginPage {
+      margin-right: 681px;
+      width: 100%; } }
 
 .redAcademyWebsite {
-  font-weight: 100; }
+  font-weight: 100;
+  margin-bottom: 3rem; }
+  @media (min-width: 600px) {
+    .redAcademyWebsite {
+      margin-bottom: 0rem;
+      padding-top: 48px; } }
   .redAcademyWebsite a {
     color: #00cc00;
     text-decoration: none; }
@@ -849,9 +918,19 @@ a:visited {
   font-size: 20px;
   font-family: "Exo Web";
   font-weight: 100; }
+  @media (min-width: 600px) {
+    .archive-content {
+      font-size: 1.75rem; } }
+  @media (min-width: 1080px) {
+    .archive-content {
+      font-size: 2.5rem; } }
 
 .page-header {
   border-bottom: 1px dashed #ffffff; }
+  @media (min-width: 1080px) {
+    .page-header {
+      margin-right: 40px;
+      margin-top: 3rem; } }
 
 .page-numbers {
   padding: 5px;
@@ -861,13 +940,26 @@ a:visited {
 .error-title {
   font-weight: 400;
   font-size: 32px; }
+  @media (min-width: 1080px) {
+    .error-title {
+      margin-top: 3rem; } }
 
 .error-content {
-  font-weight: 100; }
+  font-weight: 100;
+  height: 30vh; }
+  @media (min-width: 1080px) {
+    .error-content {
+      margin-right: 260px; } }
 
 fieldset {
   border: 0;
   padding: 0; }
+
+.searchLink {
+  text-decoration: none; }
+
+.search-summary {
+  font-weight: 100; }
 
 .searchIcon {
   color: #00cc00;
@@ -876,7 +968,12 @@ fieldset {
 input[type="search"] {
   background-color: #222222;
   border: 2px solid #00cc00;
-  width: 60%; }
+  width: 60%;
+  font-family: 'Exo Web' ,'sans-serif';
+  font-size: 1rem; }
+  @media (min-width: 600px) {
+    input[type="search"] {
+      font-size: 1.25rem; } }
   input[type="search"]:hover {
     color: white;
     border: 2px solid #ffffff; }
@@ -891,15 +988,13 @@ input[type="search"] {
   font-size: 15px;
   position: relative;
   right: 11px;
-  top: 5px; }
+  top: 5px;
+  font-size: 1.20rem; }
 
 .quoteSection {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-
-.fas {
-  display: none; }
 
 .fa-quote-left {
   display: hide; }
@@ -913,15 +1008,29 @@ input[type="search"] {
       position: relative;
       right: 1%;
       font-size: 125px;
-      padding-right: 40px; } }
+      margin-left: 20px;
+      margin-right: 20px; } }
 
-.source
-a:visited {
+.source {
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 100; }
+
+.sourceLink {
   text-decoration: none;
   color: #0c0;
   font-size: 20px;
-  font-size: 1.25rem;
-  font-style: italic; }
+  font-style: italic;
+  font-weight: 100;
+  font-family: 'Exo Web' ,'sans-serif'; }
+
+.fa-7x {
+  display: none; }
+  @media (min-width: 1080px) {
+    .fa-7x {
+      display: inline;
+      margin-top: 50px;
+      font-size: 125px; } }
 
 .quoteRight {
   display: hide; }
@@ -934,4 +1043,5 @@ a:visited {
       color: #00cc00;
       font-size: 125px;
       right: 1%;
-      position: relative; } }
+      position: relative;
+      margin-left: 20px; } }

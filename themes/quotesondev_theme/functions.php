@@ -143,10 +143,7 @@ function items_per_page( $query ) {
     $query->set( 'posts_per_page', 10 );
   }
   elseif ( ( ! is_admin() ) && ( $query === $wp_the_query ) && ( $query->is_archive() ) ) {
-    $query->set( 'posts_per_page', 5 );
+	$query->set( 'posts_per_page', 5 );
+
   }
-  
-
-  return $query;
-
 }

@@ -17,6 +17,14 @@ body {
 .quotesDevLogo {
   width: 80%;
   display: block;
+  @include tablet {
+    width: 500px;
+  }
+
+  @include desktop { 
+    margin: 0 auto;
+    width: 700px;
+  }
 }
 
 .site-branding {
@@ -27,8 +35,16 @@ body {
   font-size: 20px;
   font-family: "Exo Web";
   font-weight: 100;
-  margin-top: 3rem;
+  // margin-top: 3rem;
+@include tablet { 
+  font-size: 1.75rem;
+} 
+@include desktop {
+  font-size: 2.5rem;
+  // margin-right: 17px;
+  margin-right: 157px;
 
+}
 }
 .author_dev {
   display: inline;
@@ -55,11 +71,22 @@ body {
   box-shadow: none;
   text-shadow: none;
   display: block;
+  background: none;
+
+  @include desktop { 
+    margin: 0 auto;
+  }
 
   a {
     text-decoration: none;
     color: #00cc00;
-    font-weight: 400;
+    // font-weight: 400;
+    font-family: "Exo Web";
+
+    @include tablet { 
+      // font-weight: 700;
+    font-size: 20px;
+    }
   }
 }
 
@@ -72,7 +99,7 @@ body {
 
 .about-content {
   font-weight: 100;
-  height: 70vh;
+  height: 40vh;
 
 @include tablet { 
   height: 40vh;
@@ -88,6 +115,7 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
+
 .author-content li {
   margin-bottom: 0.5rem;
   margin-right: 9px;
@@ -96,7 +124,13 @@ body {
   padding-left: 0;
   padding-right: 0;
   font-weight: 100;
+  font-size: 1rem;
 
+  @include tablet { 
+    font-size: 1.25rem;
+    
+}
+  
   a {
     text-decoration: none;
   }
@@ -124,6 +158,10 @@ margin-top: 3rem;
     padding-left: 0;
     padding-right: 0;
     font-weight: 100;
+
+    @include tablet { 
+      font-size: 1.25rem;
+    }
   
     a {
       text-decoration: none;
@@ -144,6 +182,12 @@ margin-top: 3rem;
     padding-left: 0;
     padding-right: 0;
     font-weight: 100;
+    @include tablet { 
+      font-size: 1.25rem;
+    }
+    @include desktop { 
+      margin-right: 15px;
+    }
   
     a {
       text-decoration: none;
@@ -159,11 +203,26 @@ input[type="text"] {
   width: 57%;
   margin-top: 20px;
   margin-bottom: 20px;
+
+  @include tablet { 
+    width: 110%;
+  }
+
+  @include desktop { 
+        width: 135%; 
+}
+  
 }
 
 input[name="Quote"] {
   height: 100px;
   width: 100%;
+  @include tablet { 
+width: 160%;
+  }
+  @include desktop { 
+    width: 195%;
+  }
 }
 
 .submit-title {
@@ -175,12 +234,13 @@ input[type="submit"] {
   color: #00cc00;
   border: solid 2px #00cc00;
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 400;
   padding: 12px 37px;
   background-color: #222222;
   box-shadow: none;
   text-shadow: none;
   display: block;
+
 }
 
 .menu-toggle {
@@ -193,6 +253,15 @@ input[type="submit"] {
   // float: left;
   // width: 100%;
   display: flex;
+  margin-top: 3rem;
+  margin-bottom: 14px;
+
+  @include tablet {
+    width: 54%;
+    margin-bottom: 4rem;
+   
+  
+}
 
 @include desktop {
     display: flex;
@@ -249,12 +318,32 @@ a:visited {
 }
 
 .submitPage {
-  height: 160vh;
+  height: 110vh;
+@include tablet { 
+  height: 108vh;
+}    
+@include desktop {
+  margin-right: 400px;
+}
+}
+.loginPage { 
+  height: 13vh;
 
+  @include desktop { 
+    margin-right: 681px;
+    width: 100%;
+  }
 }
 .redAcademyWebsite {
   font-weight: 100;
+  margin-bottom: 3rem;
 
+
+  @include tablet { 
+    margin-bottom: 0rem;
+    padding-top: 48px;
+    }
+  
   @include desktop { 
     // display: flex;
     // justify-content: flex-end;
@@ -279,11 +368,24 @@ a:visited {
   font-size: 20px;
   font-family: "Exo Web";
   font-weight: 100;
+
+  @include tablet { 
+    font-size: 1.75rem;
+  }
+
+  @include desktop { 
+    font-size: 2.5rem;
+  }
 }
 
 .page-header { 
 
   border-bottom: 1px dashed #ffffff;
+
+  @include desktop { 
+    margin-right: 40px;
+    margin-top: 3rem;
+  }
 }
 
 .page-numbers { 
@@ -295,10 +397,19 @@ a:visited {
 .error-title { 
   font-weight: 400;
   font-size: 32px;
+
+  @include desktop { 
+    margin-top: 3rem;
+  }
 }
 
 .error-content {
   font-weight: 100;
+  height: 30vh;
+
+  @include desktop { 
+    margin-right: 260px;
+  }
 }
 
 fieldset {
@@ -306,7 +417,13 @@ fieldset {
   padding: 0;
 }
 
+.searchLink { 
+  text-decoration: none;
+}
 
+.search-summary { 
+  font-weight: 100;
+}
 .searchIcon { 
   color: #00cc00;
   text-shadow: none;
@@ -316,6 +433,11 @@ input[type="search"] {
   background-color: #222222;
   border: 2px solid #00cc00;
   width: 60%;
+ font-family: 'Exo Web' ,'sans-serif';
+ font-size: 1rem;
+ @include tablet { 
+  font-size: 1.25rem;
+ } 
 &:hover { 
   color: white;
   border:2px solid #ffffff;
@@ -335,15 +457,17 @@ input[type="search"] {
   position: relative;
   right: 11px;
   top: 5px;
+  font-size: 1.20rem;
 }
 
 .quoteSection {
   display:flex;
+  
   } 
 
-  .fas { 
-    display: none;
-  }
+  // .fas { 
+  //   display: none;
+  // }
 .fa-quote-left { 
   display: hide;
   @include tablet {
@@ -355,19 +479,33 @@ display: hide;
     position: relative;
     right: 1%;
     font-size: 125px;   
-    padding-right: 40px;   
+    margin-left: 20px;
+    margin-right: 20px; 
 }
+}
+.source { 
+  font-size: 1.25rem;
+  font-style: italic;
+  font-weight: 100;
 }
 
-.source  
-  a:visited {  
+.sourceLink  {
   text-decoration:none;
   color: #0c0;
   font-size: 20px;
-  font-size: 1.25rem;
   font-style: italic;
+  font-weight: 100;
+  font-family: 'Exo Web' ,'sans-serif';
 }
 
+.fa-7x { 
+  display: none;
+  @include desktop { 
+    display:inline;
+    margin-top: 50px;
+    font-size: 125px;
+  }
+}
 .quoteRight { 
   display: hide;
   @include tablet {
@@ -379,6 +517,7 @@ display: hide;
     font-size:125px;
     right: 1%;
     position: relative;
+    margin-left: 20px;
       }
 }
 

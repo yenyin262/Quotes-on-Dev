@@ -8,7 +8,7 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-<div class=submitPage>
+
     <header class="entry-header">
 		<?php the_title( '<h1 class="submit-title">', '</h1>' ); ?>
 	</header><!-- .entry-header -->
@@ -16,7 +16,7 @@
     <div class="submitQuoteSection">
 
     <?php if ( is_user_logged_in() ) { ?>
-
+        <div class=submitPage>
         <form id="quote-form" action='page-submit.php' method='POST'>
             Author of Quote: <br><input type="text" id ="author-name" name="Author"><br>
             Quote: <br> <input type="text" id= "newQuote" name="Quote"><br>
@@ -27,8 +27,8 @@
         </div>
 
     <?php } else { ?>
-       
-
+      
+<div class="loginPage">
     <div class="loginMessage">  
          <p>Sorry, you must be logged in to submit a quote!</p>
         <a class="loginLink" href="http://localhost:3000/Project_5/wp-login.php">Click here to login.</a> 
