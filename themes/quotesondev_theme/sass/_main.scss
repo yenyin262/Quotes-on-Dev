@@ -4,489 +4,463 @@ body {
   font-family: "Exo Web";
   font-size: 16px;
   line-height: 1.5;
-//}
 
-.max-width-container {
-  padding: 15px;
-  margin-top: 50px;
-  width: 100%;
-  margin: 0 auto;
-  max-width: 1080px;
-//}
-
-.site-branding {
-  margin-top: 50px;
-  .quotesDevLogo {
-    width: 80%;
-    display: block;
-    @include tablet {
-      width: 500px;
-    }
-  
-    @include desktop {
-      margin: 0 auto;
-      width: 700px;
-    }
-  }
-  
-}
-
-
-
-
-.quotesbyauthor {
-  font-size: 20px;
-  font-family: "Exo Web";
-  font-weight: 100;
-
-  @include tablet {
-    font-size: 1.75rem;
-  }
-  @include desktop {
-    font-size: 2.5rem;
-  }
-}
-
-.author_dev {
-  display: inline;
-  font-size: 20px;
-  font-weight: 100;
-  h2 {
-    font-size: 1.25rem;
-  }
-}
-.authorDevContainer {
-  margin-bottom: 40px;
-}
-
-.showMeAnotherButton {
-  color: #00cc00;
-  border: solid 2px #00cc00;
-  font-size: 16px;
-  font-weight: 700;
-  padding: 12px 37px;
-  background-color: #222222;
-  box-shadow: none;
-  text-shadow: none;
-  display: block;
-  background: none;
-
-  @include desktop {
-    margin: 0 auto;
-  }
-
-  a {
-    text-decoration: none;
-    color: #00cc00;
-    font-family: "Exo Web";
-
-    @include tablet {
-      font-size: 20px;
-    }
-  }
-}
-
-.about-title,
-.archive-title {
-  font-weight: 400;
-  margin-top: 3rem;
-}
-
-.about-content {
-  font-weight: 100;
-  height: 40vh;
-
-  @include tablet {
-    height: 40vh;
-  }
-  a {
-    text-decoration: none;
-  }
-}
-
-.author-content ul {
-  margin-left: 0;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.author-content li {
-  margin-bottom: 0.5rem;
-  margin-right: 9px;
-  border-right: none;
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-  font-weight: 100;
-  font-size: 1rem;
-
-  @include tablet {
-    font-size: 1.25rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
-}
-.author-content h2,
-.category-content h2,
-.tags-content h2 {
-  font-weight: 400;
-  margin-top: 3rem;
-}
-.category-content ul {
-  margin-left: 0;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.category-content li {
-  margin-bottom: 0.5rem;
-  margin-right: 9px;
-  border-right: none;
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-  font-weight: 100;
-
-  @include tablet {
-    font-size: 1.25rem;
-  }
-
-  a {
-    text-decoration: none;
-  }
-}
-
-.tags-content ul {
-  margin-left: 0;
-  padding-left: 0;
-  display: flex;
-  flex-wrap: wrap;
-}
-.tags-content li {
-  margin-bottom: 0.5rem;
-  margin-right: 6px;
-  border-right: none;
-  list-style: none;
-  padding-left: 0;
-  padding-right: 0;
-  font-weight: 100;
-  @include tablet {
-    font-size: 1.25rem;
-  }
-  @include desktop {
-    margin-right: 15px;
-  }
-
-  a {
-    text-decoration: none;
-  }
-}
-
-input[type="text"] {
-  border: solid 2px #00cc00;
-  background-color: #222222;
-  color: #ffffff;
-  width: 57%;
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-  @include tablet {
-    width: 110%;
-  }
-
-  @include desktop {
-    width: 135%;
-  }
-}
-
-input[name="Quote"] {
-  height: 100px;
-  width: 100%;
-  @include tablet {
-    width: 160%;
-  }
-  @include desktop {
-    width: 195%;
-  }
-}
-
-.submit-title {
-  font-weight: 400;
-  margin-top: 40px;
-}
-
-input[type="submit"] {
-  color: #00cc00;
-  border: solid 2px #00cc00;
-  font-size: 16px;
-  font-weight: 400;
-  padding: 12px 37px;
-  background-color: #222222;
-  box-shadow: none;
-  text-shadow: none;
-  display: block;
-}
-
-.menu-toggle {
-  display: none;
-}
-.site-info {
-  display: flex;
-  flex-wrap: wrap;
-  margin: 4.5rem 0 3rem;
-
-  @include desktop {
-    justify-content: flex-end;
-  }
-}
-.main-navigation {
-  @include tablet {
-    width: 54%;
-  }
-
-  @include desktop {
-    width: 29%;
-  }
-}
-
-.main-navigation ul {
-  display: block;
-  list-style: none;
-  font-weight: 100;
-
-  @include tablet {
-    margin-right: 16px;
-  }
-
-  li {
-    border-right: 1px solid #fff;
-    padding-right: 16px;
-    padding-left: 10px;
-  }
-  li:first-child {
-    padding-left: 0;
-  }
-  li:last-child {
-    border-right: none;
-  }
-  @include tablet {
-    li:last-child {
-      border-right: 1px solid #fff;
-    }
-  }
-}
-
-a {
-  color: #00cc00;
-}
-a:visited {
-  color: #00cc00;
-}
-
-.loginMessage {
-  font-weight: 100;
-}
-
-.loginLink {
-  text-decoration: none;
-  color: #00cc00;
-}
-
-.submitPage {
-  height: 110vh;
-  @include tablet {
-    height: 108vh;
-  }
-  @include desktop {
-    margin-right: 400px;
-    height: 180vh;
-  }
-}
-.loginPage {
-  height: 13vh;
-
-  @include desktop {
-    margin-right: 681px;
-    width: 100%;
-  }
-}
-.redAcademyWebsite {
-  font-weight: 100;
-  line-height: 1;
-
-  @include tablet {
-    margin-top: 2px;
-  }
-
-  a {
-    color: #00cc00;
-    text-decoration: none;
-  }
-}
-
-// archives
-
-.archiveAuthor {
-  padding-bottom: 50px;
-  border-bottom: 1px dashed #ffffff;
-  margin-bottom: 40px;
-}
-
-.archive-content {
-  font-size: 20px;
-  font-family: "Exo Web";
-  font-weight: 100;
-
-  @include tablet {
-    font-size: 1.75rem;
-  }
-
-  @include desktop {
-    font-size: 2.5rem;
-  }
-}
-
-.page-header {
-  border-bottom: 1px dashed #ffffff;
-
-  @include desktop {
-    margin-right: 40px;
-    margin-top: 3rem;
-  }
-}
-
-.page-numbers {
-  padding: 5px;
-  text-decoration: none;
-  font-weight: 100;
-}
-
-.error-title {
-  font-weight: 400;
-  font-size: 32px;
-
-  @include desktop {
-    margin-top: 3rem;
-  }
-}
-
-.error-content {
-  font-weight: 100;
-  height: 30vh;
-
-  @include desktop {
-    margin-right: 260px;
-  }
-}
-
-fieldset {
-  border: 0;
-  padding: 0;
-}
-
-.searchLink {
-  text-decoration: none;
-}
-
-.search-summary {
-  font-weight: 100;
-}
-.searchIcon {
-  color: #00cc00;
-  text-shadow: none;
-}
-
-input[type="search"] {
-  background-color: #222222;
-  border: 2px solid #00cc00;
-  width: 60%;
-  font-family: "Exo Web", "sans-serif";
-  font-size: 1rem;
-  @include tablet {
-    font-size: 1.25rem;
-  }
-  &:hover {
-    color: white;
-    border: 2px solid #ffffff;
-  }
-}
-
-.search-submit {
-  background-color: #222222;
-  box-shadow: none;
-  border: none;
-}
-
-.fa-search {
-  font-size: 15px;
-  position: relative;
-  right: 11px;
-  top: 5px;
-  font-size: 1.2rem;
-}
-
-.quoteSection {
-  display: flex;
-}
-
-.fa-quote-left {
-  display: hide;
-  @include tablet {
-    display: hide;
-  }
-  @include desktop {
-    display: inline;
-    color: #00cc00;
-    position: relative;
-    right: 1%;
-    font-size: 125px;
-    margin-left: 20px;
-    margin-right: 20px;
-  }
-}
-.source {
-  font-size: 1.25rem;
-  font-style: italic;
-  font-weight: 100;
-}
-
-.sourceLink {
-  text-decoration: none;
-  color: #00cc00;
-  font-size: 20px;
-  font-style: italic;
-  font-weight: 100;
-  font-family: "Exo Web", "sans-serif";
-}
-
-.fa-7x {
-  display: none;
-  @include desktop {
-    display: inline;
+  .max-width-container {
+    padding: 15px;
     margin-top: 50px;
-    font-size: 125px;
-  }
-}
-.quoteRight {
-  display: hide;
-  @include tablet {
-    display: hide;
-  }
-  @include desktop {
-    display: inline;
-    color: #00cc00;
-    font-size: 125px;
-    right: 1%;
-    position: relative;
-    margin-left: 20px;
-  }
-}
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1080px;
 
-button:hover {
-  box-shadow: none;
+    .site-branding {
+      margin-top: 50px;
+      .quotesDevLogo {
+        width: 80%;
+        display: block;
+        @include tablet {
+          width: 500px;
+        }
+
+        @include desktop {
+          margin: 0 auto;
+          width: 700px;
+        }
+      }
+    }
+
+    .quoteSection {
+      display: flex;
+      .fa-7x {
+        display: none;
+        @include desktop {
+          display: inline;
+          margin-top: 50px;
+          font-size: 125px;
+        }
+      }
+      .fa-quote-left {
+        display: hide;
+        @include tablet {
+          display: hide;
+        }
+        @include desktop {
+          display: inline;
+          color: #00cc00;
+          position: relative;
+          right: 1%;
+          font-size: 125px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+      }
+    }
+
+    .quotesByAuthor {
+      font-size: 20px;
+      font-family: "Exo Web";
+      font-weight: 100;
+
+      @include tablet {
+        font-size: 1.75rem;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+        margin-right: 90px;
+      }
+    }
+
+    .author_dev {
+      display: inline;
+      font-size: 20px;
+      font-weight: 100;
+      h2 {
+        font-size: 1.25rem;
+      }
+    }
+    .authorDevContainer {
+      margin-bottom: 40px;
+    }
+
+    .showMeAnotherButton {
+      color: #00cc00;
+      border: solid 2px #00cc00;
+      font-size: 16px;
+      font-weight: 700;
+      padding: 12px 37px;
+      background-color: #222222;
+      box-shadow: none;
+      text-shadow: none;
+      display: block;
+      background: none;
+
+      @include desktop {
+        margin: 0 auto;
+      }
+
+      a {
+        text-decoration: none;
+        color: #00cc00;
+        font-family: "Exo Web";
+
+        @include tablet {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .about-title,
+    .archive-title {
+      font-weight: 400;
+      margin-top: 3rem;
+    }
+
+    .about-content {
+      font-weight: 100;
+      height: 40vh;
+      @include tablet {
+        height: 40vh;
+      }
+      a {
+        text-decoration: none;
+      }
+    }
+
+    .author-content ul {
+      margin-left: 0;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 0.5rem;
+        margin-right: 9px;
+        border-right: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 100;
+        font-size: 1rem;
+
+        @include tablet {
+          font-size: 1.25rem;
+        }
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .author-content h2,
+    .category-content h2,
+    .tags-content h2 {
+      font-weight: 400;
+      margin-top: 3rem;
+    }
+    .category-content ul {
+      margin-left: 0;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 0.5rem;
+        margin-right: 9px;
+        border-right: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 100;
+
+        @include tablet {
+          font-size: 1.25rem;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .tags-content ul {
+      margin-left: 0;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+
+      li {
+        margin-bottom: 0.5rem;
+        margin-right: 6px;
+        border-right: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 100;
+        @include tablet {
+          font-size: 1.25rem;
+        }
+        @include desktop {
+          margin-right: 15px;
+        }
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+
+    .page-header {
+      border-bottom: 1px dashed #ffffff;
+
+      @include desktop {
+        margin-right: 40px;
+        margin-top: 3rem;
+      }
+    }
+
+    .archiveAuthor {
+      padding-bottom: 50px;
+      border-bottom: 1px dashed #ffffff;
+      margin-bottom: 40px;
+    }
+
+    .archive-content {
+      font-size: 20px;
+      font-family: "Exo Web";
+      font-weight: 100;
+      @include tablet {
+        font-size: 1.75rem;
+      }
+      @include desktop {
+        font-size: 2.5rem;
+      }
+    }
+
+    .page-numbers {
+      padding: 5px;
+      text-decoration: none;
+      font-weight: 100;
+    }
+
+    .submit-title {
+      font-weight: 400;
+      margin-top: 40px;
+    }
+    .submitPage {
+      @include desktop {
+        margin-right: 400px;
+      }
+    }
+
+    input[type="text"] {
+      border: solid 2px #00cc00;
+      background-color: #222222;
+      color: #ffffff;
+      width: 57%;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      @include tablet {
+        width: 110%;
+      }
+      @include desktop {
+        width: 135%;
+      }
+    }
+
+    input[name="Quote"] {
+      height: 100px;
+      width: 100%;
+      @include tablet {
+        width: 160%;
+      }
+      @include desktop {
+        width: 195%;
+      }
+    }
+
+    input[type="submit"] {
+      color: #00cc00;
+      border: solid 2px #00cc00;
+      font-size: 16px;
+      font-weight: 400;
+      padding: 12px 37px;
+      background-color: #222222;
+      box-shadow: none;
+      text-shadow: none;
+      display: block;
+    }
+
+    a {
+      color: #00cc00;
+    }
+    a:visited {
+      color: #00cc00;
+    }
+
+    .loginPage {
+      @include desktop {
+        margin-right: 681px;
+        width: 100%;
+      }
+      .loginMessage {
+        font-weight: 100;
+
+        .loginLink {
+          text-decoration: none;
+          color: #00cc00;
+        }
+      }
+    }
+
+    .error-title {
+      font-weight: 400;
+      font-size: 32px;
+      @include desktop {
+        margin-top: 3rem;
+      }
+    }
+
+    .error-content {
+      font-weight: 100;
+      height: 30vh;
+      @include desktop {
+        margin-right: 260px;
+      }
+    }
+
+    fieldset {
+      border: 0;
+      padding: 0;
+    }
+
+    .searchLink {
+      text-decoration: none;
+    }
+
+    .search-summary {
+      font-weight: 100;
+    }
+
+    .searchIcon {
+      color: #00cc00;
+      text-shadow: none;
+      .fa-search {
+        font-size: 15px;
+        position: relative;
+        right: 11px;
+        top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    input[type="search"] {
+      background-color: #222222;
+      border: 2px solid #00cc00;
+      width: 60%;
+      font-family: "Exo Web", "sans-serif";
+      font-size: 1rem;
+      @include tablet {
+        font-size: 1.25rem;
+      }
+      &:hover {
+        color: white;
+        border: 2px solid #ffffff;
+      }
+    }
+
+    .search-submit {
+      background-color: #222222;
+      box-shadow: none;
+      border: none;
+    }
+
+    .source {
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 100;
+
+      .sourceLink {
+        text-decoration: none;
+        color: #00cc00;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 100;
+        font-family: "Exo Web", "sans-serif";
+      }
+    }
+    button:hover {
+      box-shadow: none;
+    }
+
+    .site-info {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 4.5rem 0 3rem;
+      @include desktop {
+        justify-content: flex-end;
+      }
+      .menu-toggle {
+        display: none;
+      }
+      .main-navigation {
+        @include tablet {
+          width: initial;
+        }
+        @include desktop {
+          width: 29%;
+        }
+        ul {
+          display: block;
+          list-style: none;
+          font-weight: 100;
+          @include tablet {
+            margin-right: 16px;
+          }
+          li {
+            border-right: 1px solid #fff;
+            padding-right: 16px;
+            padding-left: 10px;
+            &:first-child {
+              padding-left: 0;
+            }
+            &:last-child {
+              border-right: none;
+            }
+            @include tablet {
+              &:last-child {
+                border-right: 1px solid #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .redAcademyWebsite {
+      font-weight: 100;
+      line-height: 1;
+      @include tablet {
+        margin: 0;
+        line-height: initial;
+      }
+
+      a {
+        color: #00cc00;
+        text-decoration: none;
+      }
+    }
+
+    .quoteRight {
+      display: hide;
+      @include tablet {
+        display: hide;
+      }
+      @include desktop {
+        display: inline;
+        color: #00cc00;
+        font-size: 125px;
+        right: 1%;
+        position: relative;
+        margin-left: 20px;
+      }
+    }
+  }
 }
- } // div page max-width closing brace
-} //body closing brace

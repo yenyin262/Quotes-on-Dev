@@ -11,8 +11,8 @@ $(function () {
       }
     }).done(function (data) {
 
-      $(".quotesbyauthor").html(data[0].content.rendered);
-      $(".author_dev").html('- ' + data[0].title.rendered);
+      $("#authorQuote").html(data[0].content.rendered);
+      $("#authorDev").html('- ' + data[0].title.rendered);
 
 
       const sourceUrl = data[0]._qod_quote_source_url;

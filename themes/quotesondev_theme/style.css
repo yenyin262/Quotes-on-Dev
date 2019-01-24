@@ -636,16 +636,42 @@ body {
           body .max-width-container .site-branding .quotesDevLogo {
             margin: 0 auto;
             width: 700px; } }
-    body .max-width-container .quotesbyauthor {
+    body .max-width-container .quoteSection {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      body .max-width-container .quoteSection .fa-7x {
+        display: none; }
+        @media (min-width: 1080px) {
+          body .max-width-container .quoteSection .fa-7x {
+            display: inline;
+            margin-top: 50px;
+            font-size: 125px; } }
+      body .max-width-container .quoteSection .fa-quote-left {
+        display: hide; }
+        @media (min-width: 600px) {
+          body .max-width-container .quoteSection .fa-quote-left {
+            display: hide; } }
+        @media (min-width: 1080px) {
+          body .max-width-container .quoteSection .fa-quote-left {
+            display: inline;
+            color: #00cc00;
+            position: relative;
+            right: 1%;
+            font-size: 125px;
+            margin-left: 20px;
+            margin-right: 20px; } }
+    body .max-width-container .quotesByAuthor {
       font-size: 20px;
       font-family: "Exo Web";
       font-weight: 100; }
       @media (min-width: 600px) {
-        body .max-width-container .quotesbyauthor {
+        body .max-width-container .quotesByAuthor {
           font-size: 1.75rem; } }
       @media (min-width: 1080px) {
-        body .max-width-container .quotesbyauthor {
-          font-size: 2.5rem; } }
+        body .max-width-container .quotesByAuthor {
+          font-size: 2.5rem;
+          margin-right: 90px; } }
     body .max-width-container .author_dev {
       display: inline;
       font-size: 20px;
@@ -696,20 +722,20 @@ body {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-    body .max-width-container .author-content li {
-      margin-bottom: 0.5rem;
-      margin-right: 9px;
-      border-right: none;
-      list-style: none;
-      padding-left: 0;
-      padding-right: 0;
-      font-weight: 100;
-      font-size: 1rem; }
-      @media (min-width: 600px) {
-        body .max-width-container .author-content li {
-          font-size: 1.25rem; } }
-      body .max-width-container .author-content li a {
-        text-decoration: none; }
+      body .max-width-container .author-content ul li {
+        margin-bottom: 0.5rem;
+        margin-right: 9px;
+        border-right: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 100;
+        font-size: 1rem; }
+        @media (min-width: 600px) {
+          body .max-width-container .author-content ul li {
+            font-size: 1.25rem; } }
+        body .max-width-container .author-content ul li a {
+          text-decoration: none; }
     body .max-width-container .author-content h2,
     body .max-width-container .category-content h2,
     body .max-width-container .tags-content h2 {
@@ -723,19 +749,19 @@ body {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-    body .max-width-container .category-content li {
-      margin-bottom: 0.5rem;
-      margin-right: 9px;
-      border-right: none;
-      list-style: none;
-      padding-left: 0;
-      padding-right: 0;
-      font-weight: 100; }
-      @media (min-width: 600px) {
-        body .max-width-container .category-content li {
-          font-size: 1.25rem; } }
-      body .max-width-container .category-content li a {
-        text-decoration: none; }
+      body .max-width-container .category-content ul li {
+        margin-bottom: 0.5rem;
+        margin-right: 9px;
+        border-right: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 100; }
+        @media (min-width: 600px) {
+          body .max-width-container .category-content ul li {
+            font-size: 1.25rem; } }
+        body .max-width-container .category-content ul li a {
+          text-decoration: none; }
     body .max-width-container .tags-content ul {
       margin-left: 0;
       padding-left: 0;
@@ -744,22 +770,52 @@ body {
       display: flex;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-    body .max-width-container .tags-content li {
-      margin-bottom: 0.5rem;
-      margin-right: 6px;
-      border-right: none;
-      list-style: none;
-      padding-left: 0;
-      padding-right: 0;
+      body .max-width-container .tags-content ul li {
+        margin-bottom: 0.5rem;
+        margin-right: 6px;
+        border-right: none;
+        list-style: none;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 100; }
+        @media (min-width: 600px) {
+          body .max-width-container .tags-content ul li {
+            font-size: 1.25rem; } }
+        @media (min-width: 1080px) {
+          body .max-width-container .tags-content ul li {
+            margin-right: 15px; } }
+        body .max-width-container .tags-content ul li a {
+          text-decoration: none; }
+    body .max-width-container .page-header {
+      border-bottom: 1px dashed #ffffff; }
+      @media (min-width: 1080px) {
+        body .max-width-container .page-header {
+          margin-right: 40px;
+          margin-top: 3rem; } }
+    body .max-width-container .archiveAuthor {
+      padding-bottom: 50px;
+      border-bottom: 1px dashed #ffffff;
+      margin-bottom: 40px; }
+    body .max-width-container .archive-content {
+      font-size: 20px;
+      font-family: "Exo Web";
       font-weight: 100; }
       @media (min-width: 600px) {
-        body .max-width-container .tags-content li {
-          font-size: 1.25rem; } }
+        body .max-width-container .archive-content {
+          font-size: 1.75rem; } }
       @media (min-width: 1080px) {
-        body .max-width-container .tags-content li {
-          margin-right: 15px; } }
-      body .max-width-container .tags-content li a {
-        text-decoration: none; }
+        body .max-width-container .archive-content {
+          font-size: 2.5rem; } }
+    body .max-width-container .page-numbers {
+      padding: 5px;
+      text-decoration: none;
+      font-weight: 100; }
+    body .max-width-container .submit-title {
+      font-weight: 400;
+      margin-top: 40px; }
+    @media (min-width: 1080px) {
+      body .max-width-container .submitPage {
+        margin-right: 400px; } }
     body .max-width-container input[type="text"] {
       border: solid 2px #00cc00;
       background-color: #222222;
@@ -782,9 +838,6 @@ body {
       @media (min-width: 1080px) {
         body .max-width-container input[name="Quote"] {
           width: 195%; } }
-    body .max-width-container .submit-title {
-      font-weight: 400;
-      margin-top: 40px; }
     body .max-width-container input[type="submit"] {
       color: #00cc00;
       border: solid 2px #00cc00;
@@ -796,101 +849,19 @@ body {
               box-shadow: none;
       text-shadow: none;
       display: block; }
-    body .max-width-container .menu-toggle {
-      display: none; }
-    body .max-width-container .site-info {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-          flex-wrap: wrap;
-      margin: 4.5rem 0 3rem; }
-      @media (min-width: 1080px) {
-        body .max-width-container .site-info {
-          -webkit-box-pack: end;
-              -ms-flex-pack: end;
-                  justify-content: flex-end; } }
-    @media (min-width: 600px) {
-      body .max-width-container .main-navigation {
-        width: 54%; } }
-    @media (min-width: 1080px) {
-      body .max-width-container .main-navigation {
-        width: 29%; } }
-    body .max-width-container .main-navigation ul {
-      display: block;
-      list-style: none;
-      font-weight: 100; }
-      @media (min-width: 600px) {
-        body .max-width-container .main-navigation ul {
-          margin-right: 16px; } }
-      body .max-width-container .main-navigation ul li {
-        border-right: 1px solid #fff;
-        padding-right: 16px;
-        padding-left: 10px; }
-      body .max-width-container .main-navigation ul li:first-child {
-        padding-left: 0; }
-      body .max-width-container .main-navigation ul li:last-child {
-        border-right: none; }
-      @media (min-width: 600px) {
-        body .max-width-container .main-navigation ul li:last-child {
-          border-right: 1px solid #fff; } }
     body .max-width-container a {
       color: #00cc00; }
     body .max-width-container a:visited {
       color: #00cc00; }
-    body .max-width-container .loginMessage {
+    @media (min-width: 1080px) {
+      body .max-width-container .loginPage {
+        margin-right: 681px;
+        width: 100%; } }
+    body .max-width-container .loginPage .loginMessage {
       font-weight: 100; }
-    body .max-width-container .loginLink {
-      text-decoration: none;
-      color: #00cc00; }
-    body .max-width-container .submitPage {
-      height: 110vh; }
-      @media (min-width: 600px) {
-        body .max-width-container .submitPage {
-          height: 108vh; } }
-      @media (min-width: 1080px) {
-        body .max-width-container .submitPage {
-          margin-right: 400px;
-          height: 180vh; } }
-    body .max-width-container .loginPage {
-      height: 13vh; }
-      @media (min-width: 1080px) {
-        body .max-width-container .loginPage {
-          margin-right: 681px;
-          width: 100%; } }
-    body .max-width-container .redAcademyWebsite {
-      font-weight: 100;
-      line-height: 1; }
-      @media (min-width: 600px) {
-        body .max-width-container .redAcademyWebsite {
-          margin-top: 2px; } }
-      body .max-width-container .redAcademyWebsite a {
-        color: #00cc00;
-        text-decoration: none; }
-    body .max-width-container .archiveAuthor {
-      padding-bottom: 50px;
-      border-bottom: 1px dashed #ffffff;
-      margin-bottom: 40px; }
-    body .max-width-container .archive-content {
-      font-size: 20px;
-      font-family: "Exo Web";
-      font-weight: 100; }
-      @media (min-width: 600px) {
-        body .max-width-container .archive-content {
-          font-size: 1.75rem; } }
-      @media (min-width: 1080px) {
-        body .max-width-container .archive-content {
-          font-size: 2.5rem; } }
-    body .max-width-container .page-header {
-      border-bottom: 1px dashed #ffffff; }
-      @media (min-width: 1080px) {
-        body .max-width-container .page-header {
-          margin-right: 40px;
-          margin-top: 3rem; } }
-    body .max-width-container .page-numbers {
-      padding: 5px;
-      text-decoration: none;
-      font-weight: 100; }
+      body .max-width-container .loginPage .loginMessage .loginLink {
+        text-decoration: none;
+        color: #00cc00; }
     body .max-width-container .error-title {
       font-weight: 400;
       font-size: 32px; }
@@ -913,6 +884,12 @@ body {
     body .max-width-container .searchIcon {
       color: #00cc00;
       text-shadow: none; }
+      body .max-width-container .searchIcon .fa-search {
+        font-size: 15px;
+        position: relative;
+        right: 11px;
+        top: 5px;
+        font-size: 1.2rem; }
     body .max-width-container input[type="search"] {
       background-color: #222222;
       border: 2px solid #00cc00;
@@ -930,48 +907,68 @@ body {
       -webkit-box-shadow: none;
               box-shadow: none;
       border: none; }
-    body .max-width-container .fa-search {
-      font-size: 15px;
-      position: relative;
-      right: 11px;
-      top: 5px;
-      font-size: 1.2rem; }
-    body .max-width-container .quoteSection {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-    body .max-width-container .fa-quote-left {
-      display: hide; }
-      @media (min-width: 600px) {
-        body .max-width-container .fa-quote-left {
-          display: hide; } }
-      @media (min-width: 1080px) {
-        body .max-width-container .fa-quote-left {
-          display: inline;
-          color: #00cc00;
-          position: relative;
-          right: 1%;
-          font-size: 125px;
-          margin-left: 20px;
-          margin-right: 20px; } }
     body .max-width-container .source {
       font-size: 1.25rem;
       font-style: italic;
       font-weight: 100; }
-    body .max-width-container .sourceLink {
-      text-decoration: none;
-      color: #00cc00;
-      font-size: 20px;
-      font-style: italic;
-      font-weight: 100;
-      font-family: "Exo Web", "sans-serif"; }
-    body .max-width-container .fa-7x {
-      display: none; }
+      body .max-width-container .source .sourceLink {
+        text-decoration: none;
+        color: #00cc00;
+        font-size: 20px;
+        font-style: italic;
+        font-weight: 100;
+        font-family: "Exo Web", "sans-serif"; }
+    body .max-width-container button:hover {
+      -webkit-box-shadow: none;
+              box-shadow: none; }
+    body .max-width-container .site-info {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: 4.5rem 0 3rem; }
       @media (min-width: 1080px) {
-        body .max-width-container .fa-7x {
-          display: inline;
-          margin-top: 50px;
-          font-size: 125px; } }
+        body .max-width-container .site-info {
+          -webkit-box-pack: end;
+              -ms-flex-pack: end;
+                  justify-content: flex-end; } }
+      body .max-width-container .site-info .menu-toggle {
+        display: none; }
+      @media (min-width: 600px) {
+        body .max-width-container .site-info .main-navigation {
+          width: initial; } }
+      @media (min-width: 1080px) {
+        body .max-width-container .site-info .main-navigation {
+          width: 29%; } }
+      body .max-width-container .site-info .main-navigation ul {
+        display: block;
+        list-style: none;
+        font-weight: 100; }
+        @media (min-width: 600px) {
+          body .max-width-container .site-info .main-navigation ul {
+            margin-right: 16px; } }
+        body .max-width-container .site-info .main-navigation ul li {
+          border-right: 1px solid #fff;
+          padding-right: 16px;
+          padding-left: 10px; }
+          body .max-width-container .site-info .main-navigation ul li:first-child {
+            padding-left: 0; }
+          body .max-width-container .site-info .main-navigation ul li:last-child {
+            border-right: none; }
+          @media (min-width: 600px) {
+            body .max-width-container .site-info .main-navigation ul li:last-child {
+              border-right: 1px solid #fff; } }
+    body .max-width-container .redAcademyWebsite {
+      font-weight: 100;
+      line-height: 1; }
+      @media (min-width: 600px) {
+        body .max-width-container .redAcademyWebsite {
+          margin: 0;
+          line-height: initial; } }
+      body .max-width-container .redAcademyWebsite a {
+        color: #00cc00;
+        text-decoration: none; }
     body .max-width-container .quoteRight {
       display: hide; }
       @media (min-width: 600px) {
@@ -985,6 +982,3 @@ body {
           right: 1%;
           position: relative;
           margin-left: 20px; } }
-    body .max-width-container button:hover {
-      -webkit-box-shadow: none;
-              box-shadow: none; }

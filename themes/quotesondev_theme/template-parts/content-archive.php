@@ -13,7 +13,7 @@
     </div><!-- .entry-content -->
     
     <div class="authorDevContainer archiveAuthor" > 
-        <h2 class="author_dev">- <?php the_title(); ?> </h2>
+    <h2 class="author_dev" id="authorDev">- <?php the_title(); ?> </h2>
         <?php
             $source = get_post_meta( get_the_ID(), '_qod_quote_source', true );
             $url   = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );

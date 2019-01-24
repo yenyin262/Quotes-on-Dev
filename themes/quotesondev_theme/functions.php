@@ -92,32 +92,6 @@ require get_template_directory() . '/inc/metaboxes.php';
 require get_template_directory() . '/inc/api.php';
 
 
-
-// add_filter( 'posts_orderby' , 'custom_cpt_order' );
-
-// function custom_cpt_order( $orderby ) {
-// 	global $wpdb;
-	
-// 	// Check if the query is for an archive
-// 	if ( is_archive() && get_query_var("post_type") == "title" ) {
-// 		// Query was for archive, then set order
-// 		return "$wpdb->posts.post_title ASC";
-// 	}
-	
-// 	return $orderby;
-// }
-
-
-// 	add_action( 'pre_get_posts', 'author_lists' );
-// // Show all Projects on Projects Archive Page
-// function author_lists( $query ) {
-//     if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'title' ) ) {
-//             $query->set( 'posts_per_page', '-1' );
-//     }
-// }
-
-
-
 function quote_scripts() {
    wp_localize_script( 'qod-starter-main', 'pro_quotes', array(
 	   'rest_url' => esc_url_raw( rest_url() ),

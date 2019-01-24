@@ -15,18 +15,18 @@
 	</header><!-- .entry-header -->
 
 
-    <div class="quotesbyauthor"> 
+    <div class="quotesByAuthor" id="authorQuote"> 
          <p><?php  the_excerpt(); ?> </p>
     </div>
 
     <div class="authorDevContainer" > 
-        <h2 class="author_dev">- <?php the_title(); ?> </h2>
+    <h2 class="author_dev" id="authorDev">- <?php the_title(); ?> </h2>
 		<?php $source = get_post_meta( get_the_ID(), '_qod_quote_source', true );
               $url   = get_post_meta( get_the_ID(), '_qod_quote_source_url', true );
         ?>
           
         <?php if ($url) :  ?>
-            <span class="source"><a class="sourceLink" href="<?php echo $url ?>"><?php echo $source ?></a></span>
+            <span class="source">,<a class="sourceLink" href="<?php echo $url ?>"><?php echo $source ?></a></span>
         <?php else : ?>
             <span class="source"><?php echo $source ?></span>
         <?php endif; ?>

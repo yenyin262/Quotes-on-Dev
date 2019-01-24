@@ -37,6 +37,6 @@
     <?php } ?>
 
     
-</div>
+        </div>
 	
 </article><!-- #post-## -->
