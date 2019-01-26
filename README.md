@@ -1,8 +1,40 @@
-# Quotes on Dev Starter
 
-A WordPress starter theme for the Quotes on Dev project, forked from Underscores.
+# Quotes on Dev Website
 
-## Installation
+This website is based on a WordPress theme by Chris Coyler’s Quotes on Design.  
+
+It consists of a home-page, front-page, about-page, page-archive, archive-page, search-results page, 404-page and a submit-form page.  
+
+The home-page displays random quotes once the button is clicked. The quotes are collected using WP REST API which fetches quotes in a random manner.  On the other hand, the front-page uses a GET request to a WP REST API via AJAX to add a quote without the need to refresh the browser, which then corresponds with an updated URL. 
+
+The POST request to a WP REST API is used on the submit-page, which has a quote submission form when the user is logged in.
+
+
+# Web Technologies used: 
+
+1.	WordPress
+2.	GULP 
+3.	SASS
+4.	HTML5 
+5.	JQuery
+6.	AJAX
+7.	PHP
+8.	Databases
+9.	MAMP
+
+
+# Personal Learning Developments: - 
+
+1.	Using appropriate functions to display different number of posts on the archive, page-archive and blog post index. 
+
+2.	Applying GET & POST REQUEST to retrieve data requested and submit data. 
+
+3.	Referred to the WP template hierarchy in generating the required templates for the website.
+
+
+
+
+## Installation instructions
 
 ### 1. Download me (don't clone me!)
 

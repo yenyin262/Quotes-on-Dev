@@ -1,7 +1,7 @@
 body {
-  background-color: #222222;
+  background-color: $brand-background-color;
   color: #ffffff;
-  font-family: "Exo Web";
+  font-family: $brand-font, $font__main;
   font-size: 16px;
   line-height: 1.5;
 
@@ -45,7 +45,7 @@ body {
         }
         @include desktop {
           display: inline;
-          color: #00cc00;
+          color: $brand-green-color;
           position: relative;
           right: 1%;
           font-size: 125px;
@@ -57,7 +57,7 @@ body {
 
     .quotesByAuthor {
       font-size: 20px;
-      font-family: "Exo Web";
+      font-family: $brand-font, $font__main;
       font-weight: 100;
 
       @include tablet {
@@ -82,12 +82,12 @@ body {
     }
 
     .showMeAnotherButton {
-      color: #00cc00;
-      border: solid 2px #00cc00;
+      color: $brand-green-color;
+      border: solid 2px $brand-green-color;
       font-size: 16px;
       font-weight: 700;
       padding: 12px 37px;
-      background-color: #222222;
+      background-color: $brand-background-color;
       box-shadow: none;
       text-shadow: none;
       display: block;
@@ -99,8 +99,8 @@ body {
 
       a {
         text-decoration: none;
-        color: #00cc00;
-        font-family: "Exo Web";
+        color: $brand-green-color;
+        font-family: $brand-font, $font__main;
 
         @include tablet {
           font-size: 20px;
@@ -225,7 +225,7 @@ body {
 
     .archive-content {
       font-size: 20px;
-      font-family: "Exo Web";
+      font-family: $brand-font, $font__main;
       font-weight: 100;
       @include tablet {
         font-size: 1.75rem;
@@ -252,8 +252,8 @@ body {
     }
 
     input[type="text"] {
-      border: solid 2px #00cc00;
-      background-color: #222222;
+      border: solid 2px $brand-green-color;
+      background-color: $brand-background-color;
       color: #ffffff;
       width: 57%;
       margin-top: 20px;
@@ -278,22 +278,22 @@ body {
     }
 
     input[type="submit"] {
-      color: #00cc00;
-      border: solid 2px #00cc00;
+      color: $brand-green-color;
+      border: solid 2px $brand-green-color;
       font-size: 16px;
       font-weight: 400;
       padding: 12px 37px;
-      background-color: #222222;
+      background-color: $brand-background-color;
       box-shadow: none;
       text-shadow: none;
       display: block;
     }
 
     a {
-      color: #00cc00;
+      color: $brand-green-color;
     }
     a:visited {
-      color: #00cc00;
+      color: $brand-green-color;
     }
 
     .loginPage {
@@ -306,7 +306,7 @@ body {
 
         .loginLink {
           text-decoration: none;
-          color: #00cc00;
+          color: $brand-green-color;
         }
       }
     }
@@ -341,7 +341,7 @@ body {
     }
 
     .searchIcon {
-      color: #00cc00;
+      color: $brand-green-color;
       text-shadow: none;
       .fa-search {
         font-size: 15px;
@@ -353,10 +353,10 @@ body {
     }
 
     input[type="search"] {
-      background-color: #222222;
-      border: 2px solid #00cc00;
+      background-color: $brand-background-color;
+      border: 2px solid $brand-green-color;
       width: 60%;
-      font-family: "Exo Web", "sans-serif";
+      font-family: $brand-font, $font__main;
       font-size: 1rem;
       @include tablet {
         font-size: 1.25rem;
@@ -368,7 +368,7 @@ body {
     }
 
     .search-submit {
-      background-color: #222222;
+      background-color: $brand-background-color;
       box-shadow: none;
       border: none;
     }
@@ -380,11 +380,11 @@ body {
 
       .sourceLink {
         text-decoration: none;
-        color: #00cc00;
+        color: $brand-green-color;
         font-size: 20px;
         font-style: italic;
         font-weight: 100;
-        font-family: "Exo Web", "sans-serif";
+        font-family: $brand-font, $font__main;
       }
     }
     button:hover {
@@ -443,7 +443,7 @@ body {
       }
 
       a {
-        color: #00cc00;
+        color: $brand-green-color;
         text-decoration: none;
       }
     }
@@ -455,7 +455,7 @@ body {
       }
       @include desktop {
         display: inline;
-        color: #00cc00;
+        color: $brand-green-color;
         font-size: 125px;
         right: 1%;
         position: relative;
