@@ -22,7 +22,7 @@ The POST request to a WP REST API is used on the submit-page, which has a quote 
 8.	Databases
 9.	MAMP
 
-#SnapShots: 
+# SnapShots 
 
 ## Mobile View: 
 
@@ -30,7 +30,6 @@ The POST request to a WP REST API is used on the submit-page, which has a quote 
 
 
 ![screencapture-localhost-8888-project_5-submit-a-quote-2019-01-28-12_26_00](https://user-images.githubusercontent.com/43800526/51866460-de1ca400-22fd-11e9-87c7-ef4f6d95bfed.png)
-
 
 
 
@@ -65,15 +64,12 @@ The POST request to a WP REST API is used on the submit-page, which has a quote 
 
 Then add me to your `wp-content/themes` directory.
 
-### 2. Rename the `quotesondev-starter-master` directory
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
-
-### 3. Install the dev dependencies
+### 2. Install the dev dependencies
 
 Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
 
-### 4. Update the proxy in `gulpfile.js`
+### 3. Update the proxy in `gulpfile.js`
 
 Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
 
