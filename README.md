@@ -28,7 +28,8 @@ The POST request to a WP REST API is used on the submit-page, which has a quote 
 
 ![mobile archive](https://user-images.githubusercontent.com/43800526/51865853-60a46400-22fc-11e9-8498-790abadd9145.png)
 
-![mobile login](https://user-images.githubusercontent.com/43800526/51865995-95b0b680-22fc-11e9-9a0e-eb33c18964ac.png)
+
+![screencapture-localhost-8888-project_5-submit-a-quote-2019-01-28-12_26_00](https://user-images.githubusercontent.com/43800526/51866355-a57cca80-22fd-11e9-8c27-7bf598ddfe94.png)
 
 
 
