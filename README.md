@@ -38,9 +38,10 @@ The POST request to a WP REST API is used on the submit-page, which has a quote 
 
 ## Desktop View: 
 
-![screencapture-localhost-8888-project_5-2019-01-28-12_46_20](https://user-images.githubusercontent.com/43800526/51865545-706f7880-22fb-11e9-8a59-973569b18073.png)
+![screencapture-localhost-8888-project_5-2019-01-28-12_46_20](https://user-images.githubusercontent.com/43800526/51865723-02778100-22fc-11e9-9114-3b28c03a2acb.png)
 
-![desktopnotlogin](https://user-images.githubusercontent.com/43800526/51865567-82511b80-22fb-11e9-999a-8a742aef062f.png)
+![desktopnotlogin](https://user-images.githubusercontent.com/43800526/51865726-04414480-22fc-11e9-8433-00c892353bfb.png)
+
 
 
 
