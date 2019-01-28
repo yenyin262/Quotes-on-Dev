@@ -3,7 +3,7 @@ body {
   color: #ffffff;
   font-family: $brand-font, $font__main;
   font-size: 16px;
-  line-height: 1.5;
+  line-height: $font__line-height-body;
 
   .max-width-container {
     padding: 15px;
@@ -117,8 +117,20 @@ body {
     .about-content {
       font-weight: 100;
       height: 40vh;
+      text-align: justify;
+
       @include tablet {
-        height: 40vh;
+        // height: 40vh;
+        width: 118%;
+
+        p {
+          margin-right: 20px;
+        }
+      }
+
+      @include desktop {
+        // height: 40vh;
+        width: 93%;
       }
       a {
         text-decoration: none;
@@ -130,6 +142,14 @@ body {
       padding-left: 0;
       display: flex;
       flex-wrap: wrap;
+
+      // @include tablet {
+      //   width: 115%;
+
+      // }
+      // @include desktop {
+
+      // }
 
       li {
         margin-bottom: 0.5rem;
@@ -164,7 +184,7 @@ body {
 
       li {
         margin-bottom: 0.5rem;
-        margin-right: 9px;
+        margin-right: 12px;
         border-right: none;
         list-style: none;
         padding-left: 0;
@@ -173,6 +193,8 @@ body {
 
         @include tablet {
           font-size: 1.25rem;
+          padding-left: 4px;
+          margin-right: 0px;
         }
 
         a {
@@ -247,17 +269,22 @@ body {
     }
     .submitPage {
       @include desktop {
-        margin-right: 400px;
+        margin-right: 395px;
       }
+    }
+
+    #quote-form {
+      font-weight: 100;
     }
 
     input[type="text"] {
       border: solid 2px $brand-green-color;
       background-color: $brand-background-color;
       color: #ffffff;
-      width: 57%;
+      width: 69%;
       margin-top: 20px;
       margin-bottom: 20px;
+
       @include tablet {
         width: 110%;
       }

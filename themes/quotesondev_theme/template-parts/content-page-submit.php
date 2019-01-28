@@ -17,10 +17,10 @@
          <?php if ( is_user_logged_in() ) { ?>
             
              <div class=submitPage>
-                <form id="quote-form" action='page-submit.php' method='POST'>
-                    Author of Quote: <br><input type="text" id ="author-name" name="Author"><br>
-                    Quote: <br> <input type="text" id= "newQuote" name="Quote"><br>
-                    Where did you find this quote? (e.g bookname): <br><input type="text" id="findQuote" name="findQuote" value=""><br>
+                <form id="quote-form"  method='POST'>
+                    Author of Quote <br><input type="text" id ="author-name" name="Author"><br>
+                    Quote <br> <input type="text" id= "newQuote" name="Quote"><br>
+                    Where did you find this quote? (e.g. book name) <br><input type="text" id="findQuote" name="findQuote" value=""><br>
                     Provide the URL of the quote source, if available.<br><input type="text" id="quoteSource" name="quoteSource" value=""><br>
                     <input type="submit" id= "submitButton" value="Submit Quote">
                 </form>

@@ -6,7 +6,6 @@
 		<button class="search-submit">
 			<span class=searchIcon>
 				<i class="fas fa-search"></i>
-			
 			</span>
 		</button>
 	</fieldset>

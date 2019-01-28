@@ -19,13 +19,13 @@ $(function () {
       const source = data[0]._qod_quote_source;
 
       if (sourceUrl) {
-        console.log('in url');
+
         $(".source").html(`, <a class="sourceLink" href=${sourceUrl}>${source}</a></span >`);
       } else if (source) {
-        console.log('in source');
+
         $(".source").html(`, <span class="source">${source}</span>`);
       } else {
-        console.log('in else');
+
         $(".source").html('');
       }
 
@@ -40,7 +40,7 @@ $(function () {
 
   const author = $('#author-name');
   const quote = $('#newQuote');
-  const newQuote = $('#findQuote');
+  const findQuote = $('#findQuote');
   const quoteSource = $('#quoteSource');
 
   $("#submitButton").on("click", function (event) {
@@ -56,16 +56,16 @@ $(function () {
       data: {
         title: author.val(),
         content: quote.val(),
-        _qod_quote_source: newQuote.val(),
+        _qod_quote_source: findQuote.val(),
         _qod_quote_source_url: quoteSource.val(),
         post_status: "draft"
       }
     }).done(function (data) {
       alert("Quote sucessfully submitted to database");
       $("#quote-form")[0].reset();
-      console.log('done!')
+     
     }).fail(function (err) {
-      console.log('fail')
+     
       alert("Quote submission unsuccessful");
     });
 
