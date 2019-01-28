@@ -26,15 +26,16 @@ The POST request to a WP REST API is used on the submit-page, which has a quote 
 
 ## Mobile View: 
 
-![mobile login](https://user-images.githubusercontent.com/43800526/51865138-600ace00-22fa-11e9-99dc-9bde13df2ad8.png)
+![mobile archive](https://user-images.githubusercontent.com/43800526/51865853-60a46400-22fc-11e9-8498-790abadd9145.png)
 
-![mobile archive](https://user-images.githubusercontent.com/43800526/51865144-6305be80-22fa-11e9-940c-5e2807417d51.png)
+![mobile login](https://user-images.githubusercontent.com/43800526/51865995-95b0b680-22fc-11e9-9a0e-eb33c18964ac.png)
+
 
 
 ## Tablet View: 
-![tablet](https://user-images.githubusercontent.com/43800526/51864992-18844200-22fa-11e9-92d6-7e1332404547.png)
+![tablet](https://user-images.githubusercontent.com/43800526/51866056-c42e9180-22fc-11e9-855f-b3a66cf13fb5.png)
 
-![tablet category](https://user-images.githubusercontent.com/43800526/51864995-1c17c900-22fa-11e9-99e6-19d6c792ac79.png)
+![tablet category](https://user-images.githubusercontent.com/43800526/51866079-d4467100-22fc-11e9-9d45-23ec57840b60.png)
 
 ## Desktop View: 
 
