@@ -1,3 +1,4 @@
+
 <?php
 /**
  * The template for displaying all pages.
@@ -12,7 +13,7 @@ get_header(); ?>
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
-				<?php get_template_part( 'template-parts/content-page-about'); ?>
+				<?php get_template_part('template-parts/content-page-submit' ); ?>
 
 			<?php endwhile; // End of the loop. ?>
 
