@@ -63,26 +63,10 @@ $(function () {
     }).done(function (data) {
       alert("Quote sucessfully submitted to database");
       $("#quote-form")[0].reset();
-     
+
     }).fail(function (err) {
-     
+
       alert("Quote submission unsuccessful");
     });
-
-
-
   });
 });
-
-
-
-
-
-
-
-
-
-
-
-
-
